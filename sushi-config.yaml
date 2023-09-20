@@ -7,15 +7,15 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
-status: active
+id: org.hisp.dhis.alldevs.demo
+canonical: https://dhis2.org
+url: https://dhis2.org
+name: dhis2-fhir-alldevs-demo
+title: DHIS2 Example FHIR Implementation Guide
+description: DHIS2 example FHIR implementation guide for the alldevs demo.
+status: draft
 license: CC0-1.0
-date: 2020-02-26
+date: 2020-09-20
 version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
@@ -29,24 +29,24 @@ fhirVersion: 4.0.1
 # camelcase, but if authors use the formal parameter names, SUSHI
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
-copyrightYear: 2021+
-releaseLabel: STU1
+copyrightYear: 2023+
+releaseLabel: ci-build
 
 # The publisher can be a single item or a list, each with a name and
 # optional url and/or email. The first publisher's name will be used
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: DHIS2 
+  url: https://dhis2.org
+  email: integration@dhis2.org
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Johan Hole
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: Johan@Devotta.no
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
