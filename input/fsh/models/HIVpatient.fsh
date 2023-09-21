@@ -3,14 +3,14 @@ Parent: PatientInfo
 Title: "HIV Patient Data Model"
 Description: "Extension of the base patient data model. Includes properties specific to the HIV program."
 
-* hivEnrollmentUnit 0..1 string "The organization that has first registered the person"
+* hivEnrollmentUnit 0..1 string "The organization unit that first registered the person."
 * programNationaId 0..* Identifier "..."
-* deceased 0..1 boolean "Is patient deceased?"
-* deceasedDate 0..1 boolean "When did patient die?"
+* deceased 0..1 boolean "..."
+* deceasedDate 0..1 boolean "..."
 * gender 1..1 Coding ""
 * gender from HIVPatientGenderVS (example)
   * ^comment = "(valueset depends on the program)"
-* healthFacilityCode 0..1 string "..."
+* healthFacilityCode 0..1 string "Health facility code."
 * nhisId 0..1 string "..."
 
 // @Name: Local Code Systems
