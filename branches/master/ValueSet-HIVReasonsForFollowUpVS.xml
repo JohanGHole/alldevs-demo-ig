@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="HIVReasonsForFollowUpVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/ValueSet/HIVReasonsForFollowUpVS"/>
+  <version value="1.0.0"/>
+  <name value="HIVReasonsForFollowUpVS"/>
+  <title value="HIV Follow-up Reasons Value Set"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A value set including all possible reasons for HIV follow-up."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://dhis2.org/CodeSystem/HIVReasonsForFollowUp"/>
+    </include>
+  </compose>
+</ValueSet>

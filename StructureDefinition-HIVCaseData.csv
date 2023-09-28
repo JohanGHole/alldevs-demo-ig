@@ -1,0 +1,27 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"HIVCaseData","HIVCaseData","","","",0,*,"","","","null {[]} {[]}
+","HIV Initial Case Report","Initial case report filled out after enrollment.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"HIVCaseData.initialCaseReportDate","HIVCaseData.initialCaseReportDate","","","",1,1,"","","","date {[]} {[]}
+","Initial Case Report","Initial Case Report","","","","","","","","","",,,,,"",,,,"HIVCaseData.initialCaseReportDate",1,1,"",""
+"HIVCaseData.dateHIVPositiveTest","HIVCaseData.dateHIVPositiveTest","","","",1,1,"","","","date {[]} {[]}
+","Date of documented positive HIV test","Date of documented positive HIV test","","","","","","","","","",,,,,"",,,,"HIVCaseData.dateHIVPositiveTest",1,1,"",""
+"HIVCaseData.ageWhenDiagnosedWithHiv","HIVCaseData.ageWhenDiagnosedWithHiv","","","",0,1,"","","","integer {[]} {[]}
+","Age at diagnosis","Age at diagnosis","","","","","","","","","",,,,,"",,,,"HIVCaseData.ageWhenDiagnosedWithHiv",0,1,"",""
+"HIVCaseData.verticalTransmission","HIVCaseData.verticalTransmission","","","",0,1,"","","","boolean {[]} {[]}
+","Vertical transmission","Vertical transmission","","","","","","","","","",,,,,"",,,,"HIVCaseData.verticalTransmission",0,1,"",""
+"HIVCaseData.typeOfTesting","HIVCaseData.typeOfTesting","","","",0,1,"","","","Coding {[]} {[]}
+","Type of community-level testing","Type of community-level testing","","","","","","","","","",,"example","","https://dhis2.org/ValueSet/HIVtypeOfTestingVS","",,,,"HIVCaseData.typeOfTesting",0,1,"",""
+"HIVCaseData.facilityLevelTestingEntryPoint","HIVCaseData.facilityLevelTestingEntryPoint","","","",0,1,"","","","Coding {[]} {[]}
+","Entry point for facility-level testing","Entry point for facility-level testing","","","","","","","","","",,"example","","https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS","",,,,"HIVCaseData.facilityLevelTestingEntryPoint",0,1,"",""
+"HIVCaseData.patientInKeyPopGroup","HIVCaseData.patientInKeyPopGroup","","","",1,1,"","","","boolean {[]} {[]}
+","Does this person belong to any Key Population groups","Does this person belong to any Key Population groups","","","","","","","","","",,,,,"",,,,"HIVCaseData.patientInKeyPopGroup",1,1,"",""
+"HIVCaseData.keyPopGroupMenWhoHaveSexWithMen","HIVCaseData.keyPopGroupMenWhoHaveSexWithMen","","","",0,1,"","","","boolean {[]} {[]}
+","Key population - Men who have sex with men","Key population - Men who have sex with men","","","","","","","","","",,,,,"",,,,"HIVCaseData.keyPopGroupMenWhoHaveSexWithMen",0,1,"",""
+"HIVCaseData.keyPopGroupInjectionDrugUser","HIVCaseData.keyPopGroupInjectionDrugUser","","","",0,1,"","","","boolean {[]} {[]}
+","Key population - Injection drug user","Key population - Injection drug user","","","","","","","","","",,,,,"",,,,"HIVCaseData.keyPopGroupInjectionDrugUser",0,1,"",""
+"HIVCaseData.keyPopGroupPrisoner","HIVCaseData.keyPopGroupPrisoner","","","",0,1,"","","","boolean {[]} {[]}
+","Key population - Prisoner","Key population - Prisoner","","","","","","","","","",,,,,"",,,,"HIVCaseData.keyPopGroupPrisoner",0,1,"",""
+"HIVCaseData.keyPopGroupSexWorker","HIVCaseData.keyPopGroupSexWorker","","","",0,1,"","","","boolean {[]} {[]}
+","Key population - Sex worker","Key population - Sex worker","","","","","","","","","",,,,,"",,,,"HIVCaseData.keyPopGroupSexWorker",0,1,"",""
+"HIVCaseData.keyPopGroupTransgender","HIVCaseData.keyPopGroupTransgender","","","",0,1,"","","","boolean {[]} {[]}
+","Key population - Transgender","Key population - Transgender","","","","","","","","","",,,,,"",,,,"HIVCaseData.keyPopGroupTransgender",0,1,"",""

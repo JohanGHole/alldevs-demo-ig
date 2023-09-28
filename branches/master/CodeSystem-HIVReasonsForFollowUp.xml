@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="HIVReasonsForFollowUp"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/CodeSystem/HIVReasonsForFollowUp"/>
+  <version value="1.0.0"/>
+  <name value="HIVReasonsForFollowUp"/>
+  <title value="HIV Follow-up Reasons"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reasons for HIV follow-up."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="MISSED_CLINICAL_VISIT"/>
+    <display value="Missed clinical care visit"/>
+  </concept>
+  <concept>
+    <code value="MISSED_ARV_PICKUP"/>
+    <display value="Missed medication pickup"/>
+  </concept>
+  <concept>
+    <code value="MISSED_VISIT_NONCLINICAL"/>
+    <display value="Missed non-clinical visit"/>
+  </concept>
+  <concept>
+    <code value="ART_NOT_STARTED"/>
+    <display value="Did not initiate ART"/>
+  </concept>
+  <concept>
+    <code value="HIV_INCONCLUSIVE"/>
+    <display value="Inconclusive HIV status"/>
+  </concept>
+  <concept>
+    <code value="TEST_RESULTS"/>
+    <display value="Test results received"/>
+  </concept>
+  <concept>
+    <code value="OTHER_REASON"/>
+    <display value="Other follow up reason (specify)"/>
+  </concept>
+</CodeSystem>

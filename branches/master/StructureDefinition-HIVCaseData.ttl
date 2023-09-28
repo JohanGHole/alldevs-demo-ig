@@ -1,0 +1,415 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhis2.org/StructureDefinition/HIVCaseData> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVCaseData"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://dhis2.org/StructureDefinition/HIVCaseData"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "HIVCaseData"] ; # 
+  fhir:title [ fhir:v "HIV Initial Case Report"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-09-28T13:33:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://dhis2.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "integration@dhis2.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Johan Hole" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "Johan@Devotta.no" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Initial case report filled out after enrollment."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "https://dhis2.org/StructureDefinition/HIVCaseData"^^xsd:anyURI] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "HIVCaseData" ] ;
+       fhir:path [ fhir:v "HIVCaseData" ] ;
+       fhir:short [ fhir:v "HIV Initial Case Report" ] ;
+       fhir:definition [ fhir:v "Initial case report filled out after enrollment." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.initialCaseReportDate" ] ;
+       fhir:path [ fhir:v "HIVCaseData.initialCaseReportDate" ] ;
+       fhir:short [ fhir:v "Initial Case Report" ] ;
+       fhir:definition [ fhir:v "Initial Case Report" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.initialCaseReportDate" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.dateHIVPositiveTest" ] ;
+       fhir:path [ fhir:v "HIVCaseData.dateHIVPositiveTest" ] ;
+       fhir:short [ fhir:v "Date of documented positive HIV test" ] ;
+       fhir:definition [ fhir:v "Date of documented positive HIV test" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.dateHIVPositiveTest" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.ageWhenDiagnosedWithHiv" ] ;
+       fhir:path [ fhir:v "HIVCaseData.ageWhenDiagnosedWithHiv" ] ;
+       fhir:short [ fhir:v "Age at diagnosis" ] ;
+       fhir:definition [ fhir:v "Age at diagnosis" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.ageWhenDiagnosedWithHiv" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.verticalTransmission" ] ;
+       fhir:path [ fhir:v "HIVCaseData.verticalTransmission" ] ;
+       fhir:short [ fhir:v "Vertical transmission" ] ;
+       fhir:definition [ fhir:v "Vertical transmission" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.verticalTransmission" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.typeOfTesting" ] ;
+       fhir:path [ fhir:v "HIVCaseData.typeOfTesting" ] ;
+       fhir:short [ fhir:v "Type of community-level testing" ] ;
+       fhir:definition [ fhir:v "Type of community-level testing" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.typeOfTesting" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVtypeOfTestingVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVtypeOfTestingVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.facilityLevelTestingEntryPoint" ] ;
+       fhir:path [ fhir:v "HIVCaseData.facilityLevelTestingEntryPoint" ] ;
+       fhir:short [ fhir:v "Entry point for facility-level testing" ] ;
+       fhir:definition [ fhir:v "Entry point for facility-level testing" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.facilityLevelTestingEntryPoint" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.patientInKeyPopGroup" ] ;
+       fhir:path [ fhir:v "HIVCaseData.patientInKeyPopGroup" ] ;
+       fhir:short [ fhir:v "Does this person belong to any Key Population groups" ] ;
+       fhir:definition [ fhir:v "Does this person belong to any Key Population groups" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.patientInKeyPopGroup" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupMenWhoHaveSexWithMen" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupMenWhoHaveSexWithMen" ] ;
+       fhir:short [ fhir:v "Key population - Men who have sex with men" ] ;
+       fhir:definition [ fhir:v "Key population - Men who have sex with men" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.keyPopGroupMenWhoHaveSexWithMen" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupInjectionDrugUser" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupInjectionDrugUser" ] ;
+       fhir:short [ fhir:v "Key population - Injection drug user" ] ;
+       fhir:definition [ fhir:v "Key population - Injection drug user" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.keyPopGroupInjectionDrugUser" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupPrisoner" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupPrisoner" ] ;
+       fhir:short [ fhir:v "Key population - Prisoner" ] ;
+       fhir:definition [ fhir:v "Key population - Prisoner" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.keyPopGroupPrisoner" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupSexWorker" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupSexWorker" ] ;
+       fhir:short [ fhir:v "Key population - Sex worker" ] ;
+       fhir:definition [ fhir:v "Key population - Sex worker" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.keyPopGroupSexWorker" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupTransgender" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupTransgender" ] ;
+       fhir:short [ fhir:v "Key population - Transgender" ] ;
+       fhir:definition [ fhir:v "Key population - Transgender" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseData.keyPopGroupTransgender" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "HIVCaseData" ] ;
+       fhir:path [ fhir:v "HIVCaseData" ] ;
+       fhir:short [ fhir:v "HIV Initial Case Report" ] ;
+       fhir:definition [ fhir:v "Initial case report filled out after enrollment." ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.initialCaseReportDate" ] ;
+       fhir:path [ fhir:v "HIVCaseData.initialCaseReportDate" ] ;
+       fhir:short [ fhir:v "Initial Case Report" ] ;
+       fhir:definition [ fhir:v "Initial Case Report" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.dateHIVPositiveTest" ] ;
+       fhir:path [ fhir:v "HIVCaseData.dateHIVPositiveTest" ] ;
+       fhir:short [ fhir:v "Date of documented positive HIV test" ] ;
+       fhir:definition [ fhir:v "Date of documented positive HIV test" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.ageWhenDiagnosedWithHiv" ] ;
+       fhir:path [ fhir:v "HIVCaseData.ageWhenDiagnosedWithHiv" ] ;
+       fhir:short [ fhir:v "Age at diagnosis" ] ;
+       fhir:definition [ fhir:v "Age at diagnosis" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.verticalTransmission" ] ;
+       fhir:path [ fhir:v "HIVCaseData.verticalTransmission" ] ;
+       fhir:short [ fhir:v "Vertical transmission" ] ;
+       fhir:definition [ fhir:v "Vertical transmission" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.typeOfTesting" ] ;
+       fhir:path [ fhir:v "HIVCaseData.typeOfTesting" ] ;
+       fhir:short [ fhir:v "Type of community-level testing" ] ;
+       fhir:definition [ fhir:v "Type of community-level testing" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVtypeOfTestingVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVtypeOfTestingVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.facilityLevelTestingEntryPoint" ] ;
+       fhir:path [ fhir:v "HIVCaseData.facilityLevelTestingEntryPoint" ] ;
+       fhir:short [ fhir:v "Entry point for facility-level testing" ] ;
+       fhir:definition [ fhir:v "Entry point for facility-level testing" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.patientInKeyPopGroup" ] ;
+       fhir:path [ fhir:v "HIVCaseData.patientInKeyPopGroup" ] ;
+       fhir:short [ fhir:v "Does this person belong to any Key Population groups" ] ;
+       fhir:definition [ fhir:v "Does this person belong to any Key Population groups" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupMenWhoHaveSexWithMen" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupMenWhoHaveSexWithMen" ] ;
+       fhir:short [ fhir:v "Key population - Men who have sex with men" ] ;
+       fhir:definition [ fhir:v "Key population - Men who have sex with men" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupInjectionDrugUser" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupInjectionDrugUser" ] ;
+       fhir:short [ fhir:v "Key population - Injection drug user" ] ;
+       fhir:definition [ fhir:v "Key population - Injection drug user" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupPrisoner" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupPrisoner" ] ;
+       fhir:short [ fhir:v "Key population - Prisoner" ] ;
+       fhir:definition [ fhir:v "Key population - Prisoner" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupSexWorker" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupSexWorker" ] ;
+       fhir:short [ fhir:v "Key population - Sex worker" ] ;
+       fhir:definition [ fhir:v "Key population - Sex worker" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseData.keyPopGroupTransgender" ] ;
+       fhir:path [ fhir:v "HIVCaseData.keyPopGroupTransgender" ] ;
+       fhir:short [ fhir:v "Key population - Transgender" ] ;
+       fhir:definition [ fhir:v "Key population - Transgender" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

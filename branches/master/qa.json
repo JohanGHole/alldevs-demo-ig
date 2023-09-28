@@ -1,0 +1,13 @@
+{
+  "url" : "https://dhis2.org",
+  "name" : "dhis2fhiralldevsdemo",
+  "package-id" : "org.hisp.dhis.alldevs.demo",
+  "ig-ver" : "1.0.0",
+  "date" : "Thu, 28 Sep, 2023 13:33:49 +0000",
+  "errs" : 13,
+  "warnings" : 127,
+  "hints" : 30,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1694416488
+}

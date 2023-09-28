@@ -1,0 +1,654 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhis2.org/StructureDefinition/HIVCaseVisitData> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVCaseVisitData"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://dhis2.org/StructureDefinition/HIVCaseVisitData"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "HIVCaseVisitData"] ; # 
+  fhir:title [ fhir:v "HIV Visit"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-09-28T13:33:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://dhis2.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "integration@dhis2.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Johan Hole" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "Johan@Devotta.no" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Report filled out during facility visit."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "https://dhis2.org/StructureDefinition/HIVCaseVisitData"^^xsd:anyURI] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "HIVCaseVisitData" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData" ] ;
+       fhir:short [ fhir:v "HIV Visit" ] ;
+       fhir:definition [ fhir:v "Report filled out during facility visit." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.visitDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.visitDate" ] ;
+       fhir:short [ fhir:v "Viral load test date" ] ;
+       fhir:definition [ fhir:v "Viral load test date" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.visitDate" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.dueDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.dueDate" ] ;
+       fhir:short [ fhir:v "Visit due date" ] ;
+       fhir:definition [ fhir:v "Visit due date" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.dueDate" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.reasonForVisit" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.reasonForVisit" ] ;
+       fhir:short [ fhir:v "The reason for this visit" ] ;
+       fhir:definition [ fhir:v "The reason for this visit" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.reasonForVisit" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVreasonsForVisitVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVreasonsForVisitVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.treatmentStarted" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.treatmentStarted" ] ;
+       fhir:short [ fhir:v "Is the patient currently on treatment" ] ;
+       fhir:definition [ fhir:v "Is the patient currently on treatment" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.treatmentStarted" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.dateARTInitiation" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.dateARTInitiation" ] ;
+       fhir:short [ fhir:v "Date of ART initiation" ] ;
+       fhir:definition [ fhir:v "Date of ART initiation" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.dateARTInitiation" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.eligibleforTBPreventiveTreatment" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.eligibleforTBPreventiveTreatment" ] ;
+       fhir:short [ fhir:v "Is patient eligible for preventive treatment" ] ;
+       fhir:definition [ fhir:v "Is patient eligible for preventive treatment" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.eligibleforTBPreventiveTreatment" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTEligibleDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTEligibleDate" ] ;
+       fhir:short [ fhir:v "TPT Date Eligible" ] ;
+       fhir:definition [ fhir:v "TPT Date Eligible" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.TPTEligibleDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTInitiatedDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTInitiatedDate" ] ;
+       fhir:short [ fhir:v "TPT Date Initiated" ] ;
+       fhir:definition [ fhir:v "TPT Date Initiated" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.TPTInitiatedDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTRegimen" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTRegimen" ] ;
+       fhir:short [ fhir:v "TPT Regimen" ] ;
+       fhir:definition [ fhir:v "TPT Regimen" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.TPTRegimen" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVtptRegimenVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVtptRegimenVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTCompletedDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTCompletedDate" ] ;
+       fhir:short [ fhir:v "TPT Date Completed" ] ;
+       fhir:definition [ fhir:v "TPT Date Completed" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.TPTCompletedDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTrestartTreatment" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTrestartTreatment" ] ;
+       fhir:short [ fhir:v "TPT restart treatment" ] ;
+       fhir:definition [ fhir:v "TPT restart treatment" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.TPTrestartTreatment" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.treatmentStatus" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.treatmentStatus" ] ;
+       fhir:short [ fhir:v "Treatment status" ] ;
+       fhir:definition [ fhir:v "Treatment status" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.treatmentStatus" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVtreatmentStatusVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVtreatmentStatusVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.viralLoadTestDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.viralLoadTestDate" ] ;
+       fhir:short [ fhir:v "Viral load test date" ] ;
+       fhir:definition [ fhir:v "Viral load test date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.viralLoadTestDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.viralLoadLessThanThousand" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.viralLoadLessThanThousand" ] ;
+       fhir:short [ fhir:v "Viral load < 1000" ] ;
+       fhir:definition [ fhir:v "Viral load < 1000" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.viralLoadLessThanThousand" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.numberOfviralLoadTestResults" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.numberOfviralLoadTestResults" ] ;
+       fhir:short [ fhir:v "Viral load test results" ] ;
+       fhir:definition [ fhir:v "Viral load test results" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.numberOfviralLoadTestResults" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.previousViralLoadValue" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.previousViralLoadValue" ] ;
+       fhir:short [ fhir:v "Previous viral load value" ] ;
+       fhir:definition [ fhir:v "Previous viral load value" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.previousViralLoadValue" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.lastDateWithART" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.lastDateWithART" ] ;
+       fhir:short [ fhir:v "Last day with ART" ] ;
+       fhir:definition [ fhir:v "Last day with ART" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.lastDateWithART" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.dateOfDeath" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.dateOfDeath" ] ;
+       fhir:short [ fhir:v "Date of death" ] ;
+       fhir:definition [ fhir:v "Date of death" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.dateOfDeath" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.statusChangeDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.statusChangeDate" ] ;
+       fhir:short [ fhir:v "Status change date" ] ;
+       fhir:definition [ fhir:v "Status change date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.statusChangeDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.currentlyPregnant" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.currentlyPregnant" ] ;
+       fhir:short [ fhir:v "Currently pregnant?" ] ;
+       fhir:definition [ fhir:v "Currently pregnant?" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.currentlyPregnant" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.daysARTdispensed" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.daysARTdispensed" ] ;
+       fhir:short [ fhir:v "Days of ART provided" ] ;
+       fhir:definition [ fhir:v "Days of ART provided" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVCaseVisitData.daysARTdispensed" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "HIVCaseVisitData" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData" ] ;
+       fhir:short [ fhir:v "HIV Visit" ] ;
+       fhir:definition [ fhir:v "Report filled out during facility visit." ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.visitDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.visitDate" ] ;
+       fhir:short [ fhir:v "Viral load test date" ] ;
+       fhir:definition [ fhir:v "Viral load test date" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.dueDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.dueDate" ] ;
+       fhir:short [ fhir:v "Visit due date" ] ;
+       fhir:definition [ fhir:v "Visit due date" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.reasonForVisit" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.reasonForVisit" ] ;
+       fhir:short [ fhir:v "The reason for this visit" ] ;
+       fhir:definition [ fhir:v "The reason for this visit" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVreasonsForVisitVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVreasonsForVisitVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.treatmentStarted" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.treatmentStarted" ] ;
+       fhir:short [ fhir:v "Is the patient currently on treatment" ] ;
+       fhir:definition [ fhir:v "Is the patient currently on treatment" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.dateARTInitiation" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.dateARTInitiation" ] ;
+       fhir:short [ fhir:v "Date of ART initiation" ] ;
+       fhir:definition [ fhir:v "Date of ART initiation" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.eligibleforTBPreventiveTreatment" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.eligibleforTBPreventiveTreatment" ] ;
+       fhir:short [ fhir:v "Is patient eligible for preventive treatment" ] ;
+       fhir:definition [ fhir:v "Is patient eligible for preventive treatment" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTEligibleDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTEligibleDate" ] ;
+       fhir:short [ fhir:v "TPT Date Eligible" ] ;
+       fhir:definition [ fhir:v "TPT Date Eligible" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTInitiatedDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTInitiatedDate" ] ;
+       fhir:short [ fhir:v "TPT Date Initiated" ] ;
+       fhir:definition [ fhir:v "TPT Date Initiated" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTRegimen" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTRegimen" ] ;
+       fhir:short [ fhir:v "TPT Regimen" ] ;
+       fhir:definition [ fhir:v "TPT Regimen" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVtptRegimenVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVtptRegimenVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTCompletedDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTCompletedDate" ] ;
+       fhir:short [ fhir:v "TPT Date Completed" ] ;
+       fhir:definition [ fhir:v "TPT Date Completed" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.TPTrestartTreatment" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.TPTrestartTreatment" ] ;
+       fhir:short [ fhir:v "TPT restart treatment" ] ;
+       fhir:definition [ fhir:v "TPT restart treatment" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.treatmentStatus" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.treatmentStatus" ] ;
+       fhir:short [ fhir:v "Treatment status" ] ;
+       fhir:definition [ fhir:v "Treatment status" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:valueSet [
+           fhir:v "https://dhis2.org/ValueSet/HIVtreatmentStatusVS"^^xsd:anyURI ;
+           fhir:link <https://dhis2.org/ValueSet/HIVtreatmentStatusVS>
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.viralLoadTestDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.viralLoadTestDate" ] ;
+       fhir:short [ fhir:v "Viral load test date" ] ;
+       fhir:definition [ fhir:v "Viral load test date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.viralLoadLessThanThousand" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.viralLoadLessThanThousand" ] ;
+       fhir:short [ fhir:v "Viral load < 1000" ] ;
+       fhir:definition [ fhir:v "Viral load < 1000" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.numberOfviralLoadTestResults" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.numberOfviralLoadTestResults" ] ;
+       fhir:short [ fhir:v "Viral load test results" ] ;
+       fhir:definition [ fhir:v "Viral load test results" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.previousViralLoadValue" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.previousViralLoadValue" ] ;
+       fhir:short [ fhir:v "Previous viral load value" ] ;
+       fhir:definition [ fhir:v "Previous viral load value" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.lastDateWithART" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.lastDateWithART" ] ;
+       fhir:short [ fhir:v "Last day with ART" ] ;
+       fhir:definition [ fhir:v "Last day with ART" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.dateOfDeath" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.dateOfDeath" ] ;
+       fhir:short [ fhir:v "Date of death" ] ;
+       fhir:definition [ fhir:v "Date of death" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.statusChangeDate" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.statusChangeDate" ] ;
+       fhir:short [ fhir:v "Status change date" ] ;
+       fhir:definition [ fhir:v "Status change date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.currentlyPregnant" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.currentlyPregnant" ] ;
+       fhir:short [ fhir:v "Currently pregnant?" ] ;
+       fhir:definition [ fhir:v "Currently pregnant?" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVCaseVisitData.daysARTdispensed" ] ;
+       fhir:path [ fhir:v "HIVCaseVisitData.daysARTdispensed" ] ;
+       fhir:short [ fhir:v "Days of ART provided" ] ;
+       fhir:definition [ fhir:v "Days of ART provided" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

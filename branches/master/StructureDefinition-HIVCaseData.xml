@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="HIVCaseData"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/StructureDefinition/HIVCaseData"/>
+  <version value="1.0.0"/>
+  <name value="HIVCaseData"/>
+  <title value="HIV Initial Case Report"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Initial case report filled out after enrollment."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://dhis2.org/StructureDefinition/HIVCaseData"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="HIVCaseData">
+      <path value="HIVCaseData"/>
+      <short value="HIV Initial Case Report"/>
+      <definition value="Initial case report filled out after enrollment."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="HIVCaseData.initialCaseReportDate">
+      <path value="HIVCaseData.initialCaseReportDate"/>
+      <short value="Initial Case Report"/>
+      <definition value="Initial Case Report"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.initialCaseReportDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.dateHIVPositiveTest">
+      <path value="HIVCaseData.dateHIVPositiveTest"/>
+      <short value="Date of documented positive HIV test"/>
+      <definition value="Date of documented positive HIV test"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.dateHIVPositiveTest"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.ageWhenDiagnosedWithHiv">
+      <path value="HIVCaseData.ageWhenDiagnosedWithHiv"/>
+      <short value="Age at diagnosis"/>
+      <definition value="Age at diagnosis"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.ageWhenDiagnosedWithHiv"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.verticalTransmission">
+      <path value="HIVCaseData.verticalTransmission"/>
+      <short value="Vertical transmission"/>
+      <definition value="Vertical transmission"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.verticalTransmission"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.typeOfTesting">
+      <path value="HIVCaseData.typeOfTesting"/>
+      <short value="Type of community-level testing"/>
+      <definition value="Type of community-level testing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.typeOfTesting"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="https://dhis2.org/ValueSet/HIVtypeOfTestingVS"/>
+      </binding>
+    </element>
+    <element id="HIVCaseData.facilityLevelTestingEntryPoint">
+      <path value="HIVCaseData.facilityLevelTestingEntryPoint"/>
+      <short value="Entry point for facility-level testing"/>
+      <definition value="Entry point for facility-level testing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.facilityLevelTestingEntryPoint"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS"/>
+      </binding>
+    </element>
+    <element id="HIVCaseData.patientInKeyPopGroup">
+      <path value="HIVCaseData.patientInKeyPopGroup"/>
+      <short value="Does this person belong to any Key Population groups"/>
+      <definition value="Does this person belong to any Key Population groups"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.patientInKeyPopGroup"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupMenWhoHaveSexWithMen">
+      <path value="HIVCaseData.keyPopGroupMenWhoHaveSexWithMen"/>
+      <short value="Key population - Men who have sex with men"/>
+      <definition value="Key population - Men who have sex with men"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.keyPopGroupMenWhoHaveSexWithMen"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupInjectionDrugUser">
+      <path value="HIVCaseData.keyPopGroupInjectionDrugUser"/>
+      <short value="Key population - Injection drug user"/>
+      <definition value="Key population - Injection drug user"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.keyPopGroupInjectionDrugUser"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupPrisoner">
+      <path value="HIVCaseData.keyPopGroupPrisoner"/>
+      <short value="Key population - Prisoner"/>
+      <definition value="Key population - Prisoner"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.keyPopGroupPrisoner"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupSexWorker">
+      <path value="HIVCaseData.keyPopGroupSexWorker"/>
+      <short value="Key population - Sex worker"/>
+      <definition value="Key population - Sex worker"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.keyPopGroupSexWorker"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupTransgender">
+      <path value="HIVCaseData.keyPopGroupTransgender"/>
+      <short value="Key population - Transgender"/>
+      <definition value="Key population - Transgender"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVCaseData.keyPopGroupTransgender"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="HIVCaseData">
+      <path value="HIVCaseData"/>
+      <short value="HIV Initial Case Report"/>
+      <definition value="Initial case report filled out after enrollment."/>
+    </element>
+    <element id="HIVCaseData.initialCaseReportDate">
+      <path value="HIVCaseData.initialCaseReportDate"/>
+      <short value="Initial Case Report"/>
+      <definition value="Initial Case Report"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.dateHIVPositiveTest">
+      <path value="HIVCaseData.dateHIVPositiveTest"/>
+      <short value="Date of documented positive HIV test"/>
+      <definition value="Date of documented positive HIV test"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.ageWhenDiagnosedWithHiv">
+      <path value="HIVCaseData.ageWhenDiagnosedWithHiv"/>
+      <short value="Age at diagnosis"/>
+      <definition value="Age at diagnosis"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.verticalTransmission">
+      <path value="HIVCaseData.verticalTransmission"/>
+      <short value="Vertical transmission"/>
+      <definition value="Vertical transmission"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.typeOfTesting">
+      <path value="HIVCaseData.typeOfTesting"/>
+      <short value="Type of community-level testing"/>
+      <definition value="Type of community-level testing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="https://dhis2.org/ValueSet/HIVtypeOfTestingVS"/>
+      </binding>
+    </element>
+    <element id="HIVCaseData.facilityLevelTestingEntryPoint">
+      <path value="HIVCaseData.facilityLevelTestingEntryPoint"/>
+      <short value="Entry point for facility-level testing"/>
+      <definition value="Entry point for facility-level testing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS"/>
+      </binding>
+    </element>
+    <element id="HIVCaseData.patientInKeyPopGroup">
+      <path value="HIVCaseData.patientInKeyPopGroup"/>
+      <short value="Does this person belong to any Key Population groups"/>
+      <definition value="Does this person belong to any Key Population groups"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupMenWhoHaveSexWithMen">
+      <path value="HIVCaseData.keyPopGroupMenWhoHaveSexWithMen"/>
+      <short value="Key population - Men who have sex with men"/>
+      <definition value="Key population - Men who have sex with men"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupInjectionDrugUser">
+      <path value="HIVCaseData.keyPopGroupInjectionDrugUser"/>
+      <short value="Key population - Injection drug user"/>
+      <definition value="Key population - Injection drug user"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupPrisoner">
+      <path value="HIVCaseData.keyPopGroupPrisoner"/>
+      <short value="Key population - Prisoner"/>
+      <definition value="Key population - Prisoner"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupSexWorker">
+      <path value="HIVCaseData.keyPopGroupSexWorker"/>
+      <short value="Key population - Sex worker"/>
+      <definition value="Key population - Sex worker"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="HIVCaseData.keyPopGroupTransgender">
+      <path value="HIVCaseData.keyPopGroupTransgender"/>
+      <short value="Key population - Transgender"/>
+      <definition value="Key population - Transgender"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

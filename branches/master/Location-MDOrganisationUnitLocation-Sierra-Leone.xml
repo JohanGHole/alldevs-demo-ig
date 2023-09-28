@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="MDOrganisationUnitLocation-Sierra-Leone"/>
+  <meta>
+    <profile value="https://dhis2.org/StructureDefinition/MDOrganisationUnitLocation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="MDOrganisationUnitLocation-Sierra-Leone"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;MDOrganisationUnitLocation-Sierra-Leone&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MDOrganisationUnitLocation.html">MDOrganisationUnit Location</a></p></div><p><b>ShortName</b>: Sierra Leone</p><p><b>MDOrganisationUnit Hiearchy Level</b>: 1</p><p><b>identifier</b>: id: ImspTQPwCqd, code: OU_525</p><p><b>name</b>: Sierra Leone</p><p><b>managingOrganization</b>: <a href="MDOrganisationUnitOrganization/ImspTQPwCqd">MDOrganisationUnitOrganization/ImspTQPwCqd</a></p></div>
+  </text>
+  <extension url="https://dhis2.org/StructureDefinition/ShortName">
+    <valueString value="Sierra Leone"/>
+  </extension>
+  <extension url="https://dhis2.org/StructureDefinition/Level">
+    <valueInteger value="1"/>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://dhis2.org/identifiertypes"/>
+        <code value="id"/>
+      </coding>
+    </type>
+    <system value="http://dhis2.org/identifiertypes#id"/>
+    <value value="ImspTQPwCqd"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://dhis2.org/identifiertypes"/>
+        <code value="code"/>
+      </coding>
+    </type>
+    <system value="http://dhis2.org/identifiertypes#code"/>
+    <value value="OU_525"/>
+  </identifier>
+  <name value="Sierra Leone"/>
+  <managingOrganization>
+    <reference value="MDOrganisationUnitOrganization/ImspTQPwCqd"/>
+  </managingOrganization>
+</Location>

@@ -1,0 +1,43 @@
+{
+  "resourceType" : "Location",
+  "id" : "MDOrganisationUnitLocation-Sierra-Leone",
+  "meta" : {
+    "profile" : ["https://dhis2.org/StructureDefinition/MDOrganisationUnitLocation"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"MDOrganisationUnitLocation-Sierra-Leone\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;MDOrganisationUnitLocation-Sierra-Leone&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MDOrganisationUnitLocation.html\">MDOrganisationUnit Location</a></p></div><p><b>ShortName</b>: Sierra Leone</p><p><b>MDOrganisationUnit Hiearchy Level</b>: 1</p><p><b>identifier</b>: id: ImspTQPwCqd, code: OU_525</p><p><b>name</b>: Sierra Leone</p><p><b>managingOrganization</b>: <a href=\"MDOrganisationUnitOrganization/ImspTQPwCqd\">MDOrganisationUnitOrganization/ImspTQPwCqd</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://dhis2.org/StructureDefinition/ShortName",
+    "valueString" : "Sierra Leone"
+  },
+  {
+    "url" : "https://dhis2.org/StructureDefinition/Level",
+    "valueInteger" : 1
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://dhis2.org/identifiertypes",
+        "code" : "id"
+      }]
+    },
+    "system" : "http://dhis2.org/identifiertypes#id",
+    "value" : "ImspTQPwCqd"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://dhis2.org/identifiertypes",
+        "code" : "code"
+      }]
+    },
+    "system" : "http://dhis2.org/identifiertypes#code",
+    "value" : "OU_525"
+  }],
+  "name" : "Sierra Leone",
+  "managingOrganization" : {
+    "reference" : "MDOrganisationUnitOrganization/ImspTQPwCqd"
+  }
+}

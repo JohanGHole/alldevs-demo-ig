@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhis2.org/CodeSystem/HIVFollowUpOutcomes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVFollowUpOutcomes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "HIVFollowUpOutcomes"] ; # 
+  fhir:title [ fhir:v "HIV Follow-up Outcomes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-09-28T13:33:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://dhis2.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "integration@dhis2.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Johan Hole" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "Johan@Devotta.no" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Outcomes for HIV follow-up."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "RESCHEDULED" ] ;
+     fhir:display [ fhir:v "Returning to clinic" ]
+  ] [
+     fhir:code [ fhir:v "TRANSFERRED_OUT" ] ;
+     fhir:display [ fhir:v "Self-transferred out" ]
+  ] [
+     fhir:code [ fhir:v "HOSPITALIZED" ] ;
+     fhir:display [ fhir:v "Hospitalized" ]
+  ] [
+     fhir:code [ fhir:v "REFUSED_TO_RETURN" ] ;
+     fhir:display [ fhir:v "Refused to return" ]
+  ] [
+     fhir:code [ fhir:v "NORESPONSE" ] ;
+     fhir:display [ fhir:v "Not located" ]
+  ] [
+     fhir:code [ fhir:v "DIED_REPORTED" ] ;
+     fhir:display [ fhir:v "Died (reported)" ]
+  ] [
+     fhir:code [ fhir:v "DIED_CONFIRMED" ] ;
+     fhir:display [ fhir:v "Confirmed Dead" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

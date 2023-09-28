@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PatientInfo"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/StructureDefinition/PatientInfo"/>
+  <version value="1.0.0"/>
+  <name value="PatientInfo"/>
+  <title value="Base Patient Data Model"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Representation of common DHIS2 tracked entity properties."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://dhis2.org/StructureDefinition/PatientInfo"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="PatientInfo">
+      <path value="PatientInfo"/>
+      <short value="Base Patient Data Model"/>
+      <definition value="Representation of common DHIS2 tracked entity properties."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="PatientInfo.registrationDateTime">
+      <path value="PatientInfo.registrationDateTime"/>
+      <short value="Date-Time information was entered"/>
+      <definition value="Date and Time when the patient information was entered into DHIS2"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.registrationDateTime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PatientInfo.firstregisteredAt">
+      <path value="PatientInfo.firstregisteredAt"/>
+      <short value="The Org unit where the patient was first registered"/>
+      <definition value="The Org unit where the patient was first registered"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.firstregisteredAt"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+    </element>
+    <element id="PatientInfo.firstName">
+      <path value="PatientInfo.firstName"/>
+      <short value="Given name of the patient"/>
+      <definition value="Given name of the patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.firstName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.lastName">
+      <path value="PatientInfo.lastName"/>
+      <short value="Family name"/>
+      <definition value="Family name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.lastName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.dateOfBirth">
+      <path value="PatientInfo.dateOfBirth"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.dateOfBirth"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.dateOfBirthIsEstimated">
+      <path value="PatientInfo.dateOfBirthIsEstimated"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.dateOfBirthIsEstimated"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PatientInfo.sexAtBirth">
+      <path value="PatientInfo.sexAtBirth"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <comment value="(valueset depends on the program)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.sexAtBirth"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="https://dhis2.org/ValueSet/patient-sex-at-birth-vs"/>
+      </binding>
+    </element>
+    <element id="PatientInfo.currentHomeAddress">
+      <path value="PatientInfo.currentHomeAddress"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.currentHomeAddress"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.contactPhoneNumber">
+      <path value="PatientInfo.contactPhoneNumber"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.contactPhoneNumber"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.countryOfBirth">
+      <path value="PatientInfo.countryOfBirth"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.countryOfBirth"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="urn:iso:std:iso:3166"/>
+      </binding>
+    </element>
+    <element id="PatientInfo.nationaId">
+      <path value="PatientInfo.nationaId"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.nationaId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.consent">
+      <path value="PatientInfo.consent"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PatientInfo.consent"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="PatientInfo">
+      <path value="PatientInfo"/>
+      <short value="Base Patient Data Model"/>
+      <definition value="Representation of common DHIS2 tracked entity properties."/>
+    </element>
+    <element id="PatientInfo.registrationDateTime">
+      <path value="PatientInfo.registrationDateTime"/>
+      <short value="Date-Time information was entered"/>
+      <definition value="Date and Time when the patient information was entered into DHIS2"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PatientInfo.firstregisteredAt">
+      <path value="PatientInfo.firstregisteredAt"/>
+      <short value="The Org unit where the patient was first registered"/>
+      <definition value="The Org unit where the patient was first registered"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+    </element>
+    <element id="PatientInfo.firstName">
+      <path value="PatientInfo.firstName"/>
+      <short value="Given name of the patient"/>
+      <definition value="Given name of the patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.lastName">
+      <path value="PatientInfo.lastName"/>
+      <short value="Family name"/>
+      <definition value="Family name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.dateOfBirth">
+      <path value="PatientInfo.dateOfBirth"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.dateOfBirthIsEstimated">
+      <path value="PatientInfo.dateOfBirthIsEstimated"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="PatientInfo.sexAtBirth">
+      <path value="PatientInfo.sexAtBirth"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <comment value="(valueset depends on the program)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="https://dhis2.org/ValueSet/patient-sex-at-birth-vs"/>
+      </binding>
+    </element>
+    <element id="PatientInfo.currentHomeAddress">
+      <path value="PatientInfo.currentHomeAddress"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.contactPhoneNumber">
+      <path value="PatientInfo.contactPhoneNumber"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.countryOfBirth">
+      <path value="PatientInfo.countryOfBirth"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="urn:iso:std:iso:3166"/>
+      </binding>
+    </element>
+    <element id="PatientInfo.nationaId">
+      <path value="PatientInfo.nationaId"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PatientInfo.consent">
+      <path value="PatientInfo.consent"/>
+      <short value="..."/>
+      <definition value="..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

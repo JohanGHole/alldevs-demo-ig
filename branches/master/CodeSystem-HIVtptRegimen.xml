@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="HIVtptRegimen"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/CodeSystem/HIVtptRegimen"/>
+  <version value="1.0.0"/>
+  <name value="HIVtptRegimen"/>
+  <title value="HIV TPT Regimen"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="HIV TPT regimen."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="1HP"/>
+    <display value="1HP (one month of daily rifapentine plus isoniazid)"/>
+  </concept>
+  <concept>
+    <code value="3HP"/>
+    <display value="3HP (three months of weekly rifapentine plus isoniazid)"/>
+  </concept>
+  <concept>
+    <code value="3RH"/>
+    <display value="3RH (three months of daily rifampicin plus isoniazid)"/>
+  </concept>
+  <concept>
+    <code value="4R"/>
+    <display value="4R (four months of daily rifampicin monotherapy)"/>
+  </concept>
+  <concept>
+    <code value="6H"/>
+    <display value="6H (six months of daily isoniazid monotherapy)"/>
+  </concept>
+  <concept>
+    <code value="9H"/>
+    <display value="9H (nine months of daily isoniazid monotherapy)"/>
+  </concept>
+  <concept>
+    <code value="INH-B6"/>
+    <display value="Combination INH-B6-Cotrim (for the duration of INH specified)"/>
+  </concept>
+  <concept>
+    <code value="OTHERTPT"/>
+    <display value="Other"/>
+  </concept>
+</CodeSystem>

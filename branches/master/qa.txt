@@ -1,0 +1,258 @@
+﻿dhis2fhiralldevsdemo : Validation Results
+=========================================
+
+err = 13, warn = 127, info = 30
+IG Publisher Version: 1.4.9
+Generated Thu Sep 28 13:34:57 UTC 2023. FHIR version 4.0.1 for org.hisp.dhis.alldevs.demo#1.0.0 (canonical = https://dhis2.org)
+ Build Errors : 1 / 8 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-HIVFollowUpMethods : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-HIVFollowUpOutcomes : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-HIVReasonsForFollowUp : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-HIVfacilityLevelTestingEntryPoints : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-HIVreasonsForVisit : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-HIVtptRegimen : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-HIVtreatmentStatus : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-HIVtypeOfTesting : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-patient-gender : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-patient-sex-at-birth : 0 / 2 / 6
+ /github/workspace/fsh-generated/resources/ImplementationGuide-org.hisp.dhis.alldevs.demo : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/Location-MDOrganisationUnitLocation-Sierra-Leone : 1 / 0 / 3
+ /github/workspace/fsh-generated/resources/Organization-MDOrganisationUnitOrganization-Sierra-Leone : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-AttributeValue : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HIVCaseData : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HIVCaseVisitData : 0 / 10 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HIVFollowUp : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HIVPatientInfo : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HIVView : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Level : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MDOrganisationUnitLocation : 0 / 0 / 7
+ /github/workspace/fsh-generated/resources/StructureDefinition-MDOrganisationUnitOrganization : 0 / 0 / 7
+ /github/workspace/fsh-generated/resources/StructureDefinition-OrganisationUnitGroup : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientInfo : 5 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ShortName : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-d2-md-attribute-value : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-d2-md-option : 0 / 16 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-d2-md-option-set : 0 / 18 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-d2-md-organisation-unit : 0 / 32 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVFollowUpMethodsVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVFollowUpOutcomesVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVPatientGenderVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVReasonsForFollowUpVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVfacilityLevelTestingEntryPointsVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVreasonsForVisitVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVtptRegimenVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVtreatmentStatusVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-HIVtypeOfTestingVS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-patient-sex-at-birth-vs : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: PatientInfo.countryOfBirth: The reference urn:iso:std:iso:3166 could not be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/MDOrganisationUnitLocation-Sierra-Leone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/MDOrganisationUnitOrganization-Sierra-Leone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Location-MDOrganisationUnitLocation-Sierra-Leone.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 750: The link 'MDOrganisationUnitOrganization/ImspTQPwCqd' for "MDOrganisationUnitOrganization/ImspTQPwCqd" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-HIVFollowUpMethods.json ==
+INFORMATION: CodeSystem/HIVFollowUpMethods: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/HIVFollowUpMethods: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/HIVFollowUpMethods: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-HIVFollowUpOutcomes.json ==
+INFORMATION: CodeSystem/HIVFollowUpOutcomes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/HIVFollowUpOutcomes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/HIVFollowUpOutcomes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-HIVReasonsForFollowUp.json ==
+INFORMATION: CodeSystem/HIVReasonsForFollowUp: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/HIVReasonsForFollowUp: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/HIVReasonsForFollowUp: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-HIVfacilityLevelTestingEntryPoints.json ==
+INFORMATION: CodeSystem/HIVfacilityLevelTestingEntryPoints: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/HIVfacilityLevelTestingEntryPoints: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/HIVfacilityLevelTestingEntryPoints: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-HIVreasonsForVisit.json ==
+INFORMATION: CodeSystem/HIVreasonsForVisit: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/HIVreasonsForVisit: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/HIVreasonsForVisit: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-HIVtptRegimen.json ==
+INFORMATION: CodeSystem/HIVtptRegimen: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/HIVtptRegimen: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/HIVtptRegimen: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-HIVtreatmentStatus.json ==
+INFORMATION: CodeSystem/HIVtreatmentStatus: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/HIVtreatmentStatus: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/HIVtreatmentStatus: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-HIVtypeOfTesting.json ==
+INFORMATION: CodeSystem/HIVtypeOfTesting: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/HIVtypeOfTesting: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/HIVtypeOfTesting: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-patient-gender.json ==
+INFORMATION: CodeSystem/patient-gender: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/patient-gender: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/patient-gender: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-patient-sex-at-birth.json ==
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem.concept[0].designation[2].language: The value provided ('et') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code 'urn:ietf:bcp:47#et' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem.concept[1].designation[2].language: The value provided ('et') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code 'urn:ietf:bcp:47#et' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem.concept[2].designation[2].language: The value provided ('et') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code 'urn:ietf:bcp:47#et' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem.concept[3].designation[2].language: The value provided ('et') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code 'urn:ietf:bcp:47#et' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+INFORMATION: CodeSystem/patient-sex-at-birth: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/patient-sex-at-birth: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/patient-sex-at-birth: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/ImplementationGuide-org.hisp.dhis.alldevs.demo.json ==
+ERROR: ImplementationGuide.where(url = 'https://dhis2.org'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-org.hisp.dhis.alldevs.demo.json - the canonical URL (https://dhis2.org/ImplementationGuide/org.hisp.dhis.alldevs.demo) does not match the URL (https://dhis2.org)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: org.hisp.dhis.alldevs.demo/https://dhis2.org
+WARNING: ImplementationGuide/org.hisp.dhis.alldevs.demo: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-org.hisp.dhis.alldevs.demo: URL Mismatch https://dhis2.org/ImplementationGuide/org.hisp.dhis.alldevs.demo vs https://dhis2.org
+== fsh-generated/resources/Location-MDOrganisationUnitLocation-Sierra-Leone.json ==
+INFORMATION: Location/MDOrganisationUnitLocation-Sierra-Leone: Location.identifier[0].type.coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: Location/MDOrganisationUnitLocation-Sierra-Leone: Location.identifier[1].type.coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+ERROR: Location/MDOrganisationUnitLocation-Sierra-Leone: Location.managingOrganization: Unable to resolve resource with reference 'MDOrganisationUnitOrganization/ImspTQPwCqd'
+== fsh-generated/resources/Organization-MDOrganisationUnitOrganization-Sierra-Leone.json ==
+INFORMATION: Organization/MDOrganisationUnitOrganization-Sierra-Leone: Organization.identifier[0].type.coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: Organization/MDOrganisationUnitOrganization-Sierra-Leone: Organization.identifier[1].type.coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-AttributeValue.json ==
+WARNING: StructureDefinition/AttributeValue: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://dhis2.org/StructureDefinition/AttributeValue'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-HIVCaseData.json ==
+== fsh-generated/resources/StructureDefinition-HIVCaseVisitData.json ==
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.snapshot.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.snapshot.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.snapshot.element[9]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.snapshot.element[10]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.snapshot.element[11]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.differential.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.differential.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.differential.element[9]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.differential.element[10]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/HIVCaseVisitData: StructureDefinition.differential.element[11]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+== fsh-generated/resources/StructureDefinition-HIVFollowUp.json ==
+ERROR: StructureDefinition/HIVFollowUp: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+== fsh-generated/resources/StructureDefinition-HIVPatientInfo.json ==
+ERROR: StructureDefinition/HIVPatientInfo: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+ERROR: StructureDefinition/HIVPatientInfo: StructureDefinition.snapshot.element[10].binding.valueSet: Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/HIVPatientInfo: StructureDefinition.snapshot.element[10].binding: The valueSet reference urn:iso:std:iso:3166 on element HIVPatientInfo.countryOfBirth points to something that is not a value set (CodeSystem)
+== fsh-generated/resources/StructureDefinition-HIVView.json ==
+== fsh-generated/resources/StructureDefinition-Level.json ==
+WARNING: StructureDefinition/Level: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-MDOrganisationUnitLocation.json ==
+INFORMATION: StructureDefinition/MDOrganisationUnitLocation: StructureDefinition.snapshot.element[19].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitLocation: StructureDefinition.snapshot.element[28].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitLocation: StructureDefinition.snapshot.element[37].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitLocation: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitLocation: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitLocation: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-MDOrganisationUnitOrganization.json ==
+INFORMATION: StructureDefinition/MDOrganisationUnitOrganization: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitOrganization: StructureDefinition.snapshot.element[32].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitOrganization: StructureDefinition.snapshot.element[41].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitOrganization: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitOrganization: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/MDOrganisationUnitOrganization: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://dhis2.org/identifiertypes' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-OrganisationUnitGroup.json ==
+WARNING: StructureDefinition/OrganisationUnitGroup: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://dhis2.org/StructureDefinition/OrganisationUnitGroup'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PatientInfo.json ==
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.snapshot.element[10].binding.valueSet: Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.differential.element[10].binding.valueSet: Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.differential.element[10].binding: The valueSet reference urn:iso:std:iso:3166 on element PatientInfo.countryOfBirth points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/PatientInfo: StructureDefinition.snapshot.element[10].binding: The valueSet reference urn:iso:std:iso:3166 on element PatientInfo.countryOfBirth points to something that is not a value set (CodeSystem)
+== fsh-generated/resources/StructureDefinition-ShortName.json ==
+WARNING: StructureDefinition/ShortName: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+== fsh-generated/resources/StructureDefinition-d2-md-attribute-value.json ==
+WARNING: StructureDefinition/d2-md-attribute-value: StructureDefinition.snapshot.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-attribute-value: StructureDefinition.snapshot.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-attribute-value: StructureDefinition.snapshot.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-attribute-value: StructureDefinition.differential.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-attribute-value: StructureDefinition.differential.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-attribute-value: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+== fsh-generated/resources/StructureDefinition-d2-md-option.json ==
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.snapshot.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.snapshot.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.snapshot.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.snapshot.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.snapshot.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.snapshot.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.differential.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.differential.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.differential.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.differential.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.differential.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option: StructureDefinition.differential.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+== fsh-generated/resources/StructureDefinition-d2-md-option-set.json ==
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.snapshot.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.snapshot.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.snapshot.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.snapshot.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.snapshot.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.snapshot.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.snapshot.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.differential.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.differential.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.differential.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.differential.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.differential.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.differential.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-option-set: StructureDefinition.differential.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+== fsh-generated/resources/StructureDefinition-d2-md-organisation-unit.json ==
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[9]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[10]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[11]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[12]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[13]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[14]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.snapshot.element[15]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[0]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[9]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[10]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[11]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[12]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[13]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[14]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/d2-md-organisation-unit: StructureDefinition.differential.element[15]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+== fsh-generated/resources/ValueSet-HIVFollowUpMethodsVS.json ==
+WARNING: ValueSet/HIVFollowUpMethodsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-HIVFollowUpOutcomesVS.json ==
+WARNING: ValueSet/HIVFollowUpOutcomesVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-HIVPatientGenderVS.json ==
+WARNING: ValueSet/HIVPatientGenderVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-HIVReasonsForFollowUpVS.json ==
+WARNING: ValueSet/HIVReasonsForFollowUpVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-HIVfacilityLevelTestingEntryPointsVS.json ==
+WARNING: ValueSet/HIVfacilityLevelTestingEntryPointsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-HIVreasonsForVisitVS.json ==
+WARNING: ValueSet/HIVreasonsForVisitVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-HIVtptRegimenVS.json ==
+WARNING: ValueSet/HIVtptRegimenVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-HIVtreatmentStatusVS.json ==
+WARNING: ValueSet/HIVtreatmentStatusVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-HIVtypeOfTestingVS.json ==
+WARNING: ValueSet/HIVtypeOfTestingVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-patient-sex-at-birth-vs.json ==
+WARNING: ValueSet/patient-sex-at-birth-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

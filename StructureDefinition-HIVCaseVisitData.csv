@@ -1,0 +1,45 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"HIVCaseVisitData","HIVCaseVisitData","","","",0,*,"","","","null {[]} {[]}
+","HIV Visit","Report filled out during facility visit.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"HIVCaseVisitData.visitDate","HIVCaseVisitData.visitDate","","","",1,1,"","","","date {[]} {[]}
+","Viral load test date","Viral load test date","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.visitDate",1,1,"",""
+"HIVCaseVisitData.dueDate","HIVCaseVisitData.dueDate","","","",1,1,"","","","date {[]} {[]}
+","Visit due date","Visit due date","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.dueDate",1,1,"",""
+"HIVCaseVisitData.reasonForVisit","HIVCaseVisitData.reasonForVisit","","","",0,1,"","","","Coding {[]} {[]}
+","The reason for this visit","The reason for this visit","","","","","","","","","",,"example","","https://dhis2.org/ValueSet/HIVreasonsForVisitVS","",,,,"HIVCaseVisitData.reasonForVisit",0,1,"",""
+"HIVCaseVisitData.treatmentStarted","HIVCaseVisitData.treatmentStarted","","","",0,1,"","","","boolean {[]} {[]}
+","Is the patient currently on treatment","Is the patient currently on treatment","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.treatmentStarted",0,1,"",""
+"HIVCaseVisitData.dateARTInitiation","HIVCaseVisitData.dateARTInitiation","","","",0,1,"","","","date {[]} {[]}
+","Date of ART initiation","Date of ART initiation","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.dateARTInitiation",0,1,"",""
+"HIVCaseVisitData.eligibleforTBPreventiveTreatment","HIVCaseVisitData.eligibleforTBPreventiveTreatment","","","",0,1,"","","","boolean {[]} {[]}
+","Is patient eligible for preventive treatment","Is patient eligible for preventive treatment","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.eligibleforTBPreventiveTreatment",0,1,"",""
+"HIVCaseVisitData.TPTEligibleDate","HIVCaseVisitData.TPTEligibleDate","","","",0,1,"","","","date {[]} {[]}
+","TPT Date Eligible","TPT Date Eligible","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.TPTEligibleDate",0,1,"",""
+"HIVCaseVisitData.TPTInitiatedDate","HIVCaseVisitData.TPTInitiatedDate","","","",0,1,"","","","date {[]} {[]}
+","TPT Date Initiated","TPT Date Initiated","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.TPTInitiatedDate",0,1,"",""
+"HIVCaseVisitData.TPTRegimen","HIVCaseVisitData.TPTRegimen","","","",0,1,"","","","Coding {[]} {[]}
+","TPT Regimen","TPT Regimen","","","","","","","","","",,"example","","https://dhis2.org/ValueSet/HIVtptRegimenVS","",,,,"HIVCaseVisitData.TPTRegimen",0,1,"",""
+"HIVCaseVisitData.TPTCompletedDate","HIVCaseVisitData.TPTCompletedDate","","","",0,1,"","","","date {[]} {[]}
+","TPT Date Completed","TPT Date Completed","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.TPTCompletedDate",0,1,"",""
+"HIVCaseVisitData.TPTrestartTreatment","HIVCaseVisitData.TPTrestartTreatment","","","",0,1,"","","","boolean {[]} {[]}
+","TPT restart treatment","TPT restart treatment","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.TPTrestartTreatment",0,1,"",""
+"HIVCaseVisitData.treatmentStatus","HIVCaseVisitData.treatmentStatus","","","",0,1,"","","","Coding {[]} {[]}
+","Treatment status","Treatment status","","","","","","","","","",,"example","","https://dhis2.org/ValueSet/HIVtreatmentStatusVS","",,,,"HIVCaseVisitData.treatmentStatus",0,1,"",""
+"HIVCaseVisitData.viralLoadTestDate","HIVCaseVisitData.viralLoadTestDate","","","",0,1,"","","","date {[]} {[]}
+","Viral load test date","Viral load test date","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.viralLoadTestDate",0,1,"",""
+"HIVCaseVisitData.viralLoadLessThanThousand","HIVCaseVisitData.viralLoadLessThanThousand","","","",0,1,"","","","boolean {[]} {[]}
+","Viral load < 1000","Viral load < 1000","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.viralLoadLessThanThousand",0,1,"",""
+"HIVCaseVisitData.numberOfviralLoadTestResults","HIVCaseVisitData.numberOfviralLoadTestResults","","","",0,1,"","","","integer {[]} {[]}
+","Viral load test results","Viral load test results","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.numberOfviralLoadTestResults",0,1,"",""
+"HIVCaseVisitData.previousViralLoadValue","HIVCaseVisitData.previousViralLoadValue","","","",0,1,"","","","integer {[]} {[]}
+","Previous viral load value","Previous viral load value","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.previousViralLoadValue",0,1,"",""
+"HIVCaseVisitData.lastDateWithART","HIVCaseVisitData.lastDateWithART","","","",0,1,"","","","date {[]} {[]}
+","Last day with ART","Last day with ART","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.lastDateWithART",0,1,"",""
+"HIVCaseVisitData.dateOfDeath","HIVCaseVisitData.dateOfDeath","","","",0,1,"","","","date {[]} {[]}
+","Date of death","Date of death","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.dateOfDeath",0,1,"",""
+"HIVCaseVisitData.statusChangeDate","HIVCaseVisitData.statusChangeDate","","","",0,1,"","","","date {[]} {[]}
+","Status change date","Status change date","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.statusChangeDate",0,1,"",""
+"HIVCaseVisitData.currentlyPregnant","HIVCaseVisitData.currentlyPregnant","","","",0,1,"","","","boolean {[]} {[]}
+","Currently pregnant?","Currently pregnant?","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.currentlyPregnant",0,1,"",""
+"HIVCaseVisitData.daysARTdispensed","HIVCaseVisitData.daysARTdispensed","","","",0,1,"","","","integer {[]} {[]}
+","Days of ART provided","Days of ART provided","","","","","","","","","",,,,,"",,,,"HIVCaseVisitData.daysARTdispensed",0,1,"",""

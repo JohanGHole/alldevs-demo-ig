@@ -1,0 +1,17 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"d2-md-option","d2-md-option","","","",0,*,"","","","null {[]} {[]}
+","DHIS2 Metadata: Option","DHIS2 Metadata: Option","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"d2-md-option.id","d2-md-option.id","","","",1,1,"","","","Identifier {[]} {[]}
+","Unique UID for option","Unique UID for option","","","","","","","","","",,,,,"",,,,"d2-md-option.id",1,1,"",""
+"d2-md-option.code","d2-md-option.code","","","",0,1,"","","","Identifier {[]} {[]}
+","Unique CODE for option","Unique CODE for option","","","","","","","","","",,,,,"",,,,"d2-md-option.code",0,1,"",""
+"d2-md-option.href","d2-md-option.href","","","",0,1,"","","","Identifier {[]} {[]}
+","Unique URL where the option is available from","Unique URL where the option is available from","","","","","","","","","",,,,,"",,,,"d2-md-option.href",0,1,"",""
+"d2-md-option.name","d2-md-option.name","","","",1,1,"","","","string {[]} {[]}
+","Name of option","Name of option","","","","","","","","","",,,,,"",,,,"d2-md-option.name",1,1,"",""
+"d2-md-option.shortName","d2-md-option.shortName","","","",1,1,"","","","string {[]} {[]}
+","Short name of option","Short name of option","","","","","","","","","",,,,,"",,,,"d2-md-option.shortName",1,1,"",""
+"d2-md-option.description","d2-md-option.description","","","",0,1,"","","","string {[]} {[]}
+","Description of option","Description of option","","","","","","","","","",,,,,"",,,,"d2-md-option.description",0,1,"",""
+"d2-md-option.attributeValues","d2-md-option.attributeValues","","","",0,*,"","","","https://dhis2.org/StructureDefinition/d2-md-attribute-value {[]} {[]}
+","additional attributes that are in this option","additional attributes that are in this option","","","","","","","","","",,,,,"",,,,"d2-md-option.attributeValues",0,*,"",""

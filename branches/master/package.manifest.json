@@ -1,0 +1,6 @@
+{
+  "version" : "1.0.0",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20230928133248",
+  "name" : "org.hisp.dhis.alldevs.demo"
+}

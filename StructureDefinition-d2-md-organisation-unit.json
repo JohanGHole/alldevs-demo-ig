@@ -1,0 +1,482 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "d2-md-organisation-unit",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://dhis2.org/StructureDefinition/d2-md-organisation-unit",
+  "version" : "1.0.0",
+  "name" : "MDOrganisationUnit",
+  "title" : "DHIS2 Metadata: OrganisationUnit",
+  "status" : "draft",
+  "date" : "2023-09-28T13:33:49+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DHIS2 Metadata: OrganisationUnit",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://dhis2.org/StructureDefinition/d2-md-organisation-unit",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "d2-md-organisation-unit",
+      "path" : "d2-md-organisation-unit",
+      "short" : "DHIS2 Metadata: OrganisationUnit",
+      "definition" : "DHIS2 Metadata: OrganisationUnit",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "d2-md-organisation-unit.id",
+      "path" : "d2-md-organisation-unit.id",
+      "short" : "Unique UID for organisation unit",
+      "definition" : "Unique UID for organisation unit",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.id",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.code",
+      "path" : "d2-md-organisation-unit.code",
+      "short" : "Unique CODE for organisation unit",
+      "definition" : "Unique CODE for organisation unit",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.href",
+      "path" : "d2-md-organisation-unit.href",
+      "short" : "Unique URL where the organisation unit is available from",
+      "definition" : "Unique URL where the organisation unit is available from",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.href",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.level",
+      "path" : "d2-md-organisation-unit.level",
+      "short" : "Level in hiearchy of organisation units",
+      "definition" : "Level in hiearchy of organisation units",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.level",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.parent",
+      "path" : "d2-md-organisation-unit.parent",
+      "short" : "Parent of organisation unit",
+      "definition" : "Parent of organisation unit",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.parent",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.leaf",
+      "path" : "d2-md-organisation-unit.leaf",
+      "short" : "Is this is a leaf node in the organisation unit tree",
+      "definition" : "Is this is a leaf node in the organisation unit tree",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.leaf",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.name",
+      "path" : "d2-md-organisation-unit.name",
+      "short" : "Name of organisation",
+      "definition" : "Name of organisation",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.name",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.shortName",
+      "path" : "d2-md-organisation-unit.shortName",
+      "short" : "Short name of organisation unit",
+      "definition" : "Short name of organisation unit",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.shortName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.description",
+      "path" : "d2-md-organisation-unit.description",
+      "short" : "Description of organisation unit",
+      "definition" : "Description of organisation unit",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.description",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.openingDate",
+      "path" : "d2-md-organisation-unit.openingDate",
+      "short" : "Date this organisation unit was opened",
+      "definition" : "Date this organisation unit was opened",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.openingDate",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.geometry",
+      "path" : "d2-md-organisation-unit.geometry",
+      "short" : "GeoJson geometry of organisation unit",
+      "definition" : "GeoJson geometry of organisation unit",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-organisation-unit.geometry",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.organisationUnitGroups",
+      "path" : "d2-md-organisation-unit.organisationUnitGroups",
+      "short" : "organisation unit groups that contains this organisation unit",
+      "definition" : "organisation unit groups that contains this organisation unit",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "d2-md-organisation-unit.organisationUnitGroups",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.dataSets",
+      "path" : "d2-md-organisation-unit.dataSets",
+      "short" : "data sets associated with this organisation unit",
+      "definition" : "data sets associated with this organisation unit",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "d2-md-organisation-unit.dataSets",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.programs",
+      "path" : "d2-md-organisation-unit.programs",
+      "short" : "programs associated with this organisation unit",
+      "definition" : "programs associated with this organisation unit",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "d2-md-organisation-unit.programs",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.attributeValues",
+      "path" : "d2-md-organisation-unit.attributeValues",
+      "short" : "additional attributes that are in this organisation unit",
+      "definition" : "additional attributes that are in this organisation unit",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "d2-md-organisation-unit.attributeValues",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/d2-md-attribute-value"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "d2-md-organisation-unit",
+      "path" : "d2-md-organisation-unit",
+      "short" : "DHIS2 Metadata: OrganisationUnit",
+      "definition" : "DHIS2 Metadata: OrganisationUnit"
+    },
+    {
+      "id" : "d2-md-organisation-unit.id",
+      "path" : "d2-md-organisation-unit.id",
+      "short" : "Unique UID for organisation unit",
+      "definition" : "Unique UID for organisation unit",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.code",
+      "path" : "d2-md-organisation-unit.code",
+      "short" : "Unique CODE for organisation unit",
+      "definition" : "Unique CODE for organisation unit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.href",
+      "path" : "d2-md-organisation-unit.href",
+      "short" : "Unique URL where the organisation unit is available from",
+      "definition" : "Unique URL where the organisation unit is available from",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.level",
+      "path" : "d2-md-organisation-unit.level",
+      "short" : "Level in hiearchy of organisation units",
+      "definition" : "Level in hiearchy of organisation units",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.parent",
+      "path" : "d2-md-organisation-unit.parent",
+      "short" : "Parent of organisation unit",
+      "definition" : "Parent of organisation unit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.leaf",
+      "path" : "d2-md-organisation-unit.leaf",
+      "short" : "Is this is a leaf node in the organisation unit tree",
+      "definition" : "Is this is a leaf node in the organisation unit tree",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.name",
+      "path" : "d2-md-organisation-unit.name",
+      "short" : "Name of organisation",
+      "definition" : "Name of organisation",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.shortName",
+      "path" : "d2-md-organisation-unit.shortName",
+      "short" : "Short name of organisation unit",
+      "definition" : "Short name of organisation unit",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.description",
+      "path" : "d2-md-organisation-unit.description",
+      "short" : "Description of organisation unit",
+      "definition" : "Description of organisation unit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.openingDate",
+      "path" : "d2-md-organisation-unit.openingDate",
+      "short" : "Date this organisation unit was opened",
+      "definition" : "Date this organisation unit was opened",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.geometry",
+      "path" : "d2-md-organisation-unit.geometry",
+      "short" : "GeoJson geometry of organisation unit",
+      "definition" : "GeoJson geometry of organisation unit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.organisationUnitGroups",
+      "path" : "d2-md-organisation-unit.organisationUnitGroups",
+      "short" : "organisation unit groups that contains this organisation unit",
+      "definition" : "organisation unit groups that contains this organisation unit",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.dataSets",
+      "path" : "d2-md-organisation-unit.dataSets",
+      "short" : "data sets associated with this organisation unit",
+      "definition" : "data sets associated with this organisation unit",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.programs",
+      "path" : "d2-md-organisation-unit.programs",
+      "short" : "programs associated with this organisation unit",
+      "definition" : "programs associated with this organisation unit",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-organisation-unit.attributeValues",
+      "path" : "d2-md-organisation-unit.attributeValues",
+      "short" : "additional attributes that are in this organisation unit",
+      "definition" : "additional attributes that are in this organisation unit",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/d2-md-attribute-value"
+      }]
+    }]
+  }
+}

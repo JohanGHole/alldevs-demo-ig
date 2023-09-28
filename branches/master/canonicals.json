@@ -1,0 +1,261 @@
+[
+  {
+    "id" : "org.hisp.dhis.alldevs.demo",
+    "type" : "ImplementationGuide",
+    "url" : "https://dhis2.org",
+    "version" : "1.0.0",
+    "name" : "dhis2fhiralldevsdemo"
+  },
+  {
+    "id" : "HIVFollowUpMethods",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/HIVFollowUpMethods",
+    "version" : "1.0.0",
+    "name" : "HIVFollowUpMethods"
+  },
+  {
+    "id" : "HIVFollowUpOutcomes",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+    "version" : "1.0.0",
+    "name" : "HIVFollowUpOutcomes"
+  },
+  {
+    "id" : "HIVReasonsForFollowUp",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+    "version" : "1.0.0",
+    "name" : "HIVReasonsForFollowUp"
+  },
+  {
+    "id" : "HIVfacilityLevelTestingEntryPoints",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints",
+    "version" : "1.0.0",
+    "name" : "HIVfacilityLevelTestingEntryPoints"
+  },
+  {
+    "id" : "HIVreasonsForVisit",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/HIVreasonsForVisit",
+    "version" : "1.0.0",
+    "name" : "HIVreasonsForVisit"
+  },
+  {
+    "id" : "HIVtptRegimen",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+    "version" : "1.0.0",
+    "name" : "HIVtptRegimen"
+  },
+  {
+    "id" : "HIVtreatmentStatus",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/HIVtreatmentStatus",
+    "version" : "1.0.0",
+    "name" : "HIVtreatmentStatus"
+  },
+  {
+    "id" : "HIVtypeOfTesting",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/HIVtypeOfTesting",
+    "version" : "1.0.0",
+    "name" : "HIVtypeOfTesting"
+  },
+  {
+    "id" : "patient-gender",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/patient-gender",
+    "version" : "1.0.0",
+    "name" : "HIVPatientGender"
+  },
+  {
+    "id" : "patient-sex-at-birth",
+    "type" : "CodeSystem",
+    "url" : "https://dhis2.org/CodeSystem/patient-sex-at-birth",
+    "version" : "1.0.0",
+    "name" : "PatientSexAtBirth"
+  },
+  {
+    "id" : "AttributeValue",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/AttributeValue",
+    "version" : "1.0.0",
+    "name" : "AttributeValue"
+  },
+  {
+    "id" : "HIVCaseData",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/HIVCaseData",
+    "version" : "1.0.0",
+    "name" : "HIVCaseData"
+  },
+  {
+    "id" : "HIVCaseVisitData",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/HIVCaseVisitData",
+    "version" : "1.0.0",
+    "name" : "HIVCaseVisitData"
+  },
+  {
+    "id" : "HIVFollowUp",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/HIVFollowUp",
+    "version" : "1.0.0",
+    "name" : "HIVFollowUp"
+  },
+  {
+    "id" : "HIVPatientInfo",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/HIVPatientInfo",
+    "version" : "1.0.0",
+    "name" : "HIVPatientInfo"
+  },
+  {
+    "id" : "HIVView",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/HIVView",
+    "version" : "1.0.0",
+    "name" : "HIVView"
+  },
+  {
+    "id" : "Level",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/Level",
+    "version" : "1.0.0",
+    "name" : "Level"
+  },
+  {
+    "id" : "MDOrganisationUnitLocation",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/MDOrganisationUnitLocation",
+    "version" : "1.0.0",
+    "name" : "MDOrganisationUnitLocation"
+  },
+  {
+    "id" : "MDOrganisationUnitOrganization",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/MDOrganisationUnitOrganization",
+    "version" : "1.0.0",
+    "name" : "MDOrganisationUnitOrganization"
+  },
+  {
+    "id" : "OrganisationUnitGroup",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/OrganisationUnitGroup",
+    "version" : "1.0.0",
+    "name" : "OrganisationUnitGroup"
+  },
+  {
+    "id" : "PatientInfo",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/PatientInfo",
+    "version" : "1.0.0",
+    "name" : "PatientInfo"
+  },
+  {
+    "id" : "ShortName",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/ShortName",
+    "version" : "1.0.0",
+    "name" : "ShortName"
+  },
+  {
+    "id" : "d2-md-attribute-value",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/d2-md-attribute-value",
+    "version" : "1.0.0",
+    "name" : "MDAttributeValue"
+  },
+  {
+    "id" : "d2-md-option",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/d2-md-option",
+    "version" : "1.0.0",
+    "name" : "MDOption"
+  },
+  {
+    "id" : "d2-md-option-set",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/d2-md-option-set",
+    "version" : "1.0.0",
+    "name" : "MDOptionSet"
+  },
+  {
+    "id" : "d2-md-organisation-unit",
+    "type" : "StructureDefinition",
+    "url" : "https://dhis2.org/StructureDefinition/d2-md-organisation-unit",
+    "version" : "1.0.0",
+    "name" : "MDOrganisationUnit"
+  },
+  {
+    "id" : "HIVFollowUpMethodsVS",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/HIVFollowUpMethodsVS",
+    "version" : "1.0.0",
+    "name" : "HIVFollowUpMethodsVS"
+  },
+  {
+    "id" : "HIVFollowUpOutcomesVS",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/HIVFollowUpOutcomesVS",
+    "version" : "1.0.0",
+    "name" : "HIVFollowUpOutcomesVS"
+  },
+  {
+    "id" : "HIVPatientGenderVS",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/HIVPatientGenderVS",
+    "version" : "1.0.0",
+    "name" : "HIVPatientGenderVS"
+  },
+  {
+    "id" : "HIVReasonsForFollowUpVS",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/HIVReasonsForFollowUpVS",
+    "version" : "1.0.0",
+    "name" : "HIVReasonsForFollowUpVS"
+  },
+  {
+    "id" : "HIVfacilityLevelTestingEntryPointsVS",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS",
+    "version" : "1.0.0",
+    "name" : "HIVfacilityLevelTestingEntryPointsVS"
+  },
+  {
+    "id" : "HIVreasonsForVisitVS",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/HIVreasonsForVisitVS",
+    "version" : "1.0.0",
+    "name" : "HIVreasonsForVisitVS"
+  },
+  {
+    "id" : "HIVtptRegimenVS",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/HIVtptRegimenVS",
+    "version" : "1.0.0",
+    "name" : "HIVtptRegimenVS"
+  },
+  {
+    "id" : "HIVtreatmentStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/HIVtreatmentStatusVS",
+    "version" : "1.0.0",
+    "name" : "HIVtreatmentStatusVS"
+  },
+  {
+    "id" : "HIVtypeOfTestingVS",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/HIVtypeOfTestingVS",
+    "version" : "1.0.0",
+    "name" : "HIVtypeOfTestingVS"
+  },
+  {
+    "id" : "patient-sex-at-birth-vs",
+    "type" : "ValueSet",
+    "url" : "https://dhis2.org/ValueSet/patient-sex-at-birth-vs",
+    "version" : "1.0.0",
+    "name" : "PatientSexAtBirthVS"
+  }
+]

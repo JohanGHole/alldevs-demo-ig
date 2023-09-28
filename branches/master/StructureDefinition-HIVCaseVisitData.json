@@ -1,0 +1,668 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "HIVCaseVisitData",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://dhis2.org/StructureDefinition/HIVCaseVisitData",
+  "version" : "1.0.0",
+  "name" : "HIVCaseVisitData",
+  "title" : "HIV Visit",
+  "status" : "draft",
+  "date" : "2023-09-28T13:33:49+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Report filled out during facility visit.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://dhis2.org/StructureDefinition/HIVCaseVisitData",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "HIVCaseVisitData",
+      "path" : "HIVCaseVisitData",
+      "short" : "HIV Visit",
+      "definition" : "Report filled out during facility visit.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "HIVCaseVisitData.visitDate",
+      "path" : "HIVCaseVisitData.visitDate",
+      "short" : "Viral load test date",
+      "definition" : "Viral load test date",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.visitDate",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.dueDate",
+      "path" : "HIVCaseVisitData.dueDate",
+      "short" : "Visit due date",
+      "definition" : "Visit due date",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.dueDate",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.reasonForVisit",
+      "path" : "HIVCaseVisitData.reasonForVisit",
+      "short" : "The reason for this visit",
+      "definition" : "The reason for this visit",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.reasonForVisit",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://dhis2.org/ValueSet/HIVreasonsForVisitVS"
+      }
+    },
+    {
+      "id" : "HIVCaseVisitData.treatmentStarted",
+      "path" : "HIVCaseVisitData.treatmentStarted",
+      "short" : "Is the patient currently on treatment",
+      "definition" : "Is the patient currently on treatment",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.treatmentStarted",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.dateARTInitiation",
+      "path" : "HIVCaseVisitData.dateARTInitiation",
+      "short" : "Date of ART initiation",
+      "definition" : "Date of ART initiation",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.dateARTInitiation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.eligibleforTBPreventiveTreatment",
+      "path" : "HIVCaseVisitData.eligibleforTBPreventiveTreatment",
+      "short" : "Is patient eligible for preventive treatment",
+      "definition" : "Is patient eligible for preventive treatment",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.eligibleforTBPreventiveTreatment",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTEligibleDate",
+      "path" : "HIVCaseVisitData.TPTEligibleDate",
+      "short" : "TPT Date Eligible",
+      "definition" : "TPT Date Eligible",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.TPTEligibleDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTInitiatedDate",
+      "path" : "HIVCaseVisitData.TPTInitiatedDate",
+      "short" : "TPT Date Initiated",
+      "definition" : "TPT Date Initiated",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.TPTInitiatedDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTRegimen",
+      "path" : "HIVCaseVisitData.TPTRegimen",
+      "short" : "TPT Regimen",
+      "definition" : "TPT Regimen",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.TPTRegimen",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://dhis2.org/ValueSet/HIVtptRegimenVS"
+      }
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTCompletedDate",
+      "path" : "HIVCaseVisitData.TPTCompletedDate",
+      "short" : "TPT Date Completed",
+      "definition" : "TPT Date Completed",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.TPTCompletedDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTrestartTreatment",
+      "path" : "HIVCaseVisitData.TPTrestartTreatment",
+      "short" : "TPT restart treatment",
+      "definition" : "TPT restart treatment",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.TPTrestartTreatment",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.treatmentStatus",
+      "path" : "HIVCaseVisitData.treatmentStatus",
+      "short" : "Treatment status",
+      "definition" : "Treatment status",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.treatmentStatus",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://dhis2.org/ValueSet/HIVtreatmentStatusVS"
+      }
+    },
+    {
+      "id" : "HIVCaseVisitData.viralLoadTestDate",
+      "path" : "HIVCaseVisitData.viralLoadTestDate",
+      "short" : "Viral load test date",
+      "definition" : "Viral load test date",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.viralLoadTestDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.viralLoadLessThanThousand",
+      "path" : "HIVCaseVisitData.viralLoadLessThanThousand",
+      "short" : "Viral load < 1000",
+      "definition" : "Viral load < 1000",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.viralLoadLessThanThousand",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.numberOfviralLoadTestResults",
+      "path" : "HIVCaseVisitData.numberOfviralLoadTestResults",
+      "short" : "Viral load test results",
+      "definition" : "Viral load test results",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.numberOfviralLoadTestResults",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.previousViralLoadValue",
+      "path" : "HIVCaseVisitData.previousViralLoadValue",
+      "short" : "Previous viral load value",
+      "definition" : "Previous viral load value",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.previousViralLoadValue",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.lastDateWithART",
+      "path" : "HIVCaseVisitData.lastDateWithART",
+      "short" : "Last day with ART",
+      "definition" : "Last day with ART",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.lastDateWithART",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.dateOfDeath",
+      "path" : "HIVCaseVisitData.dateOfDeath",
+      "short" : "Date of death",
+      "definition" : "Date of death",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.dateOfDeath",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.statusChangeDate",
+      "path" : "HIVCaseVisitData.statusChangeDate",
+      "short" : "Status change date",
+      "definition" : "Status change date",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.statusChangeDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.currentlyPregnant",
+      "path" : "HIVCaseVisitData.currentlyPregnant",
+      "short" : "Currently pregnant?",
+      "definition" : "Currently pregnant?",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.currentlyPregnant",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.daysARTdispensed",
+      "path" : "HIVCaseVisitData.daysARTdispensed",
+      "short" : "Days of ART provided",
+      "definition" : "Days of ART provided",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVCaseVisitData.daysARTdispensed",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "integer"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "HIVCaseVisitData",
+      "path" : "HIVCaseVisitData",
+      "short" : "HIV Visit",
+      "definition" : "Report filled out during facility visit."
+    },
+    {
+      "id" : "HIVCaseVisitData.visitDate",
+      "path" : "HIVCaseVisitData.visitDate",
+      "short" : "Viral load test date",
+      "definition" : "Viral load test date",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.dueDate",
+      "path" : "HIVCaseVisitData.dueDate",
+      "short" : "Visit due date",
+      "definition" : "Visit due date",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.reasonForVisit",
+      "path" : "HIVCaseVisitData.reasonForVisit",
+      "short" : "The reason for this visit",
+      "definition" : "The reason for this visit",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://dhis2.org/ValueSet/HIVreasonsForVisitVS"
+      }
+    },
+    {
+      "id" : "HIVCaseVisitData.treatmentStarted",
+      "path" : "HIVCaseVisitData.treatmentStarted",
+      "short" : "Is the patient currently on treatment",
+      "definition" : "Is the patient currently on treatment",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.dateARTInitiation",
+      "path" : "HIVCaseVisitData.dateARTInitiation",
+      "short" : "Date of ART initiation",
+      "definition" : "Date of ART initiation",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.eligibleforTBPreventiveTreatment",
+      "path" : "HIVCaseVisitData.eligibleforTBPreventiveTreatment",
+      "short" : "Is patient eligible for preventive treatment",
+      "definition" : "Is patient eligible for preventive treatment",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTEligibleDate",
+      "path" : "HIVCaseVisitData.TPTEligibleDate",
+      "short" : "TPT Date Eligible",
+      "definition" : "TPT Date Eligible",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTInitiatedDate",
+      "path" : "HIVCaseVisitData.TPTInitiatedDate",
+      "short" : "TPT Date Initiated",
+      "definition" : "TPT Date Initiated",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTRegimen",
+      "path" : "HIVCaseVisitData.TPTRegimen",
+      "short" : "TPT Regimen",
+      "definition" : "TPT Regimen",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://dhis2.org/ValueSet/HIVtptRegimenVS"
+      }
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTCompletedDate",
+      "path" : "HIVCaseVisitData.TPTCompletedDate",
+      "short" : "TPT Date Completed",
+      "definition" : "TPT Date Completed",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.TPTrestartTreatment",
+      "path" : "HIVCaseVisitData.TPTrestartTreatment",
+      "short" : "TPT restart treatment",
+      "definition" : "TPT restart treatment",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.treatmentStatus",
+      "path" : "HIVCaseVisitData.treatmentStatus",
+      "short" : "Treatment status",
+      "definition" : "Treatment status",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://dhis2.org/ValueSet/HIVtreatmentStatusVS"
+      }
+    },
+    {
+      "id" : "HIVCaseVisitData.viralLoadTestDate",
+      "path" : "HIVCaseVisitData.viralLoadTestDate",
+      "short" : "Viral load test date",
+      "definition" : "Viral load test date",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.viralLoadLessThanThousand",
+      "path" : "HIVCaseVisitData.viralLoadLessThanThousand",
+      "short" : "Viral load < 1000",
+      "definition" : "Viral load < 1000",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.numberOfviralLoadTestResults",
+      "path" : "HIVCaseVisitData.numberOfviralLoadTestResults",
+      "short" : "Viral load test results",
+      "definition" : "Viral load test results",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.previousViralLoadValue",
+      "path" : "HIVCaseVisitData.previousViralLoadValue",
+      "short" : "Previous viral load value",
+      "definition" : "Previous viral load value",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.lastDateWithART",
+      "path" : "HIVCaseVisitData.lastDateWithART",
+      "short" : "Last day with ART",
+      "definition" : "Last day with ART",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.dateOfDeath",
+      "path" : "HIVCaseVisitData.dateOfDeath",
+      "short" : "Date of death",
+      "definition" : "Date of death",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.statusChangeDate",
+      "path" : "HIVCaseVisitData.statusChangeDate",
+      "short" : "Status change date",
+      "definition" : "Status change date",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.currentlyPregnant",
+      "path" : "HIVCaseVisitData.currentlyPregnant",
+      "short" : "Currently pregnant?",
+      "definition" : "Currently pregnant?",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVCaseVisitData.daysARTdispensed",
+      "path" : "HIVCaseVisitData.daysARTdispensed",
+      "short" : "Days of ART provided",
+      "definition" : "Days of ART provided",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }]
+    }]
+  }
+}

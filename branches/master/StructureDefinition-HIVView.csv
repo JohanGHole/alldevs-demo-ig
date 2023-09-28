@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"HIVView","HIVView","","","",0,*,"","","","null {[]} {[]}
+","HIV Case Surveillance","Logical model representation of the HIV case surveillance and treatment follow up program.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"HIVView.caseReport","HIVView.caseReport","","","",0,1,"","","","https://dhis2.org/StructureDefinition/HIVCaseData {[]} {[]}
+","HIV Initial Case Report","HIV Initial Case Report","","","","","","","","","",,,,,"",,,,"HIVView.caseReport",0,1,"",""
+"HIVView.visit","HIVView.visit","","","",0,*,"","","","https://dhis2.org/StructureDefinition/HIVCaseVisitData {[]} {[]}
+","HIV Visit","HIV Visit","","","","","","","","","",,,,,"",,,,"HIVView.visit",0,*,"",""
+"HIVView.followUp","HIVView.followUp","","","",0,*,"","","","https://dhis2.org/StructureDefinition/HIVFollowUp {[]} {[]}
+","HIV Follow-Up","HIV Follow-Up","","","","","","","","","",,,,,"",,,,"HIVView.followUp",0,*,"",""
+"HIVView.patient","HIVView.patient","","","",1,1,"","","","https://dhis2.org/StructureDefinition/HIVPatientInfo {[]} {[]}
+","HIV Patient Info","HIV Patient Info","","","","","","","","","",,,,,"",,,,"HIVView.patient",1,1,"",""

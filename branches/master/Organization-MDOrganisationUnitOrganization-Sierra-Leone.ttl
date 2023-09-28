@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhis2.org/Organization/MDOrganisationUnitOrganization-Sierra-Leone> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MDOrganisationUnitOrganization-Sierra-Leone"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhis2.org/StructureDefinition/MDOrganisationUnitOrganization"^^xsd:anyURI ;
+       fhir:link <https://dhis2.org/StructureDefinition/MDOrganisationUnitOrganization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"MDOrganisationUnitOrganization-Sierra-Leone\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;MDOrganisationUnitOrganization-Sierra-Leone&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MDOrganisationUnitOrganization.html\">MDOrganisationUnit Organization</a></p></div><p><b>Period</b>: 1994-01-01 --&gt; (ongoing)</p><p><b>identifier</b>: id: ImspTQPwCqd, code: OU_525</p><p><b>name</b>: Sierra Leone</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/organization-period"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Period ;
+       fhir:start [ fhir:v "1994-01-01"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://dhis2.org/identifiertypes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "id" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://dhis2.org/identifiertypes#id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ImspTQPwCqd" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://dhis2.org/identifiertypes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "code" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://dhis2.org/identifiertypes#code"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "OU_525" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Sierra Leone"] . # 
+
+# -------------------------------------------------------------------------------------
+

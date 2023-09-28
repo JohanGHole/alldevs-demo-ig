@@ -1,0 +1,293 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "d2-md-option-set",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://dhis2.org/StructureDefinition/d2-md-option-set",
+  "version" : "1.0.0",
+  "name" : "MDOptionSet",
+  "title" : "DHIS2 Metadata: OptionSet",
+  "status" : "draft",
+  "date" : "2023-09-28T13:33:49+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DHIS2 Metadata: OptionSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://dhis2.org/StructureDefinition/d2-md-option-set",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "d2-md-option-set",
+      "path" : "d2-md-option-set",
+      "short" : "DHIS2 Metadata: OptionSet",
+      "definition" : "DHIS2 Metadata: OptionSet",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "d2-md-option-set.id",
+      "path" : "d2-md-option-set.id",
+      "short" : "Unique UID for option set",
+      "definition" : "Unique UID for option set",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-option-set.id",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.code",
+      "path" : "d2-md-option-set.code",
+      "short" : "Unique CODE for option set",
+      "definition" : "Unique CODE for option set",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-option-set.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.href",
+      "path" : "d2-md-option-set.href",
+      "short" : "Unique URL where the option set is available from",
+      "definition" : "Unique URL where the option set is available from",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-option-set.href",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.name",
+      "path" : "d2-md-option-set.name",
+      "short" : "Name of option set",
+      "definition" : "Name of option set",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-option-set.name",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.shortName",
+      "path" : "d2-md-option-set.shortName",
+      "short" : "Short name of option set",
+      "definition" : "Short name of option set",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-option-set.shortName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.description",
+      "path" : "d2-md-option-set.description",
+      "short" : "Description of option set",
+      "definition" : "Description of option set",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "d2-md-option-set.description",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.options",
+      "path" : "d2-md-option-set.options",
+      "short" : "programs associated with this option set",
+      "definition" : "programs associated with this option set",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "d2-md-option-set.options",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/d2-md-option"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.attributeValues",
+      "path" : "d2-md-option-set.attributeValues",
+      "short" : "additional attributes that are in this option set",
+      "definition" : "additional attributes that are in this option set",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "d2-md-option-set.attributeValues",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/d2-md-attribute-value"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "d2-md-option-set",
+      "path" : "d2-md-option-set",
+      "short" : "DHIS2 Metadata: OptionSet",
+      "definition" : "DHIS2 Metadata: OptionSet"
+    },
+    {
+      "id" : "d2-md-option-set.id",
+      "path" : "d2-md-option-set.id",
+      "short" : "Unique UID for option set",
+      "definition" : "Unique UID for option set",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.code",
+      "path" : "d2-md-option-set.code",
+      "short" : "Unique CODE for option set",
+      "definition" : "Unique CODE for option set",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.href",
+      "path" : "d2-md-option-set.href",
+      "short" : "Unique URL where the option set is available from",
+      "definition" : "Unique URL where the option set is available from",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.name",
+      "path" : "d2-md-option-set.name",
+      "short" : "Name of option set",
+      "definition" : "Name of option set",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.shortName",
+      "path" : "d2-md-option-set.shortName",
+      "short" : "Short name of option set",
+      "definition" : "Short name of option set",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.description",
+      "path" : "d2-md-option-set.description",
+      "short" : "Description of option set",
+      "definition" : "Description of option set",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.options",
+      "path" : "d2-md-option-set.options",
+      "short" : "programs associated with this option set",
+      "definition" : "programs associated with this option set",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/d2-md-option"
+      }]
+    },
+    {
+      "id" : "d2-md-option-set.attributeValues",
+      "path" : "d2-md-option-set.attributeValues",
+      "short" : "additional attributes that are in this option set",
+      "definition" : "additional attributes that are in this option set",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/d2-md-attribute-value"
+      }]
+    }]
+  }
+}

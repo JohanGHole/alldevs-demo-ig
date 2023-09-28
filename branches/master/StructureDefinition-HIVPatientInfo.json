@@ -1,0 +1,470 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "HIVPatientInfo",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://dhis2.org/StructureDefinition/HIVPatientInfo",
+  "version" : "1.0.0",
+  "name" : "HIVPatientInfo",
+  "title" : "HIV Patient Data Model",
+  "status" : "draft",
+  "date" : "2023-09-28T13:33:49+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Extension of the base patient data model. Includes properties specific to the HIV program.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://dhis2.org/StructureDefinition/HIVPatientInfo",
+  "baseDefinition" : "https://dhis2.org/StructureDefinition/PatientInfo",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "HIVPatientInfo",
+      "path" : "HIVPatientInfo",
+      "short" : "HIV Patient Data Model",
+      "definition" : "Extension of the base patient data model. Includes properties specific to the HIV program.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "HIVPatientInfo.registrationDateTime",
+      "path" : "HIVPatientInfo.registrationDateTime",
+      "short" : "Date-Time information was entered",
+      "definition" : "Date and Time when the patient information was entered into DHIS2",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.registrationDateTime",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.firstregisteredAt",
+      "path" : "HIVPatientInfo.firstregisteredAt",
+      "short" : "The Org unit where the patient was first registered",
+      "definition" : "The Org unit where the patient was first registered",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.firstregisteredAt",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.firstName",
+      "path" : "HIVPatientInfo.firstName",
+      "short" : "Given name of the patient",
+      "definition" : "Given name of the patient",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.firstName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.lastName",
+      "path" : "HIVPatientInfo.lastName",
+      "short" : "Family name",
+      "definition" : "Family name",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.lastName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.dateOfBirth",
+      "path" : "HIVPatientInfo.dateOfBirth",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.dateOfBirth",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.dateOfBirthIsEstimated",
+      "path" : "HIVPatientInfo.dateOfBirthIsEstimated",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.dateOfBirthIsEstimated",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.sexAtBirth",
+      "path" : "HIVPatientInfo.sexAtBirth",
+      "short" : "...",
+      "definition" : "...",
+      "comment" : "(valueset depends on the program)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.sexAtBirth",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://dhis2.org/ValueSet/patient-sex-at-birth-vs"
+      }
+    },
+    {
+      "id" : "HIVPatientInfo.currentHomeAddress",
+      "path" : "HIVPatientInfo.currentHomeAddress",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.currentHomeAddress",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.contactPhoneNumber",
+      "path" : "HIVPatientInfo.contactPhoneNumber",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.contactPhoneNumber",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.countryOfBirth",
+      "path" : "HIVPatientInfo.countryOfBirth",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.countryOfBirth",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "urn:iso:std:iso:3166"
+      }
+    },
+    {
+      "id" : "HIVPatientInfo.nationaId",
+      "path" : "HIVPatientInfo.nationaId",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.nationaId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.consent",
+      "path" : "HIVPatientInfo.consent",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PatientInfo.consent",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.hivEnrollmentUnit",
+      "path" : "HIVPatientInfo.hivEnrollmentUnit",
+      "short" : "The organization unit that first registered the person.",
+      "definition" : "The organization unit that first registered the person.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVPatientInfo.hivEnrollmentUnit",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.programNationaId",
+      "path" : "HIVPatientInfo.programNationaId",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "HIVPatientInfo.programNationaId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.deceased",
+      "path" : "HIVPatientInfo.deceased",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVPatientInfo.deceased",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.deceasedDate",
+      "path" : "HIVPatientInfo.deceasedDate",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVPatientInfo.deceasedDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.gender",
+      "path" : "HIVPatientInfo.gender",
+      "comment" : "(valueset depends on the program)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVPatientInfo.gender",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://dhis2.org/ValueSet/HIVPatientGenderVS"
+      }
+    },
+    {
+      "id" : "HIVPatientInfo.healthFacilityCode",
+      "path" : "HIVPatientInfo.healthFacilityCode",
+      "short" : "Health facility code.",
+      "definition" : "Health facility code.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVPatientInfo.healthFacilityCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.nhisId",
+      "path" : "HIVPatientInfo.nhisId",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVPatientInfo.nhisId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "HIVPatientInfo",
+      "path" : "HIVPatientInfo",
+      "short" : "HIV Patient Data Model",
+      "definition" : "Extension of the base patient data model. Includes properties specific to the HIV program."
+    },
+    {
+      "id" : "HIVPatientInfo.hivEnrollmentUnit",
+      "path" : "HIVPatientInfo.hivEnrollmentUnit",
+      "short" : "The organization unit that first registered the person.",
+      "definition" : "The organization unit that first registered the person.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.programNationaId",
+      "path" : "HIVPatientInfo.programNationaId",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.deceased",
+      "path" : "HIVPatientInfo.deceased",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.deceasedDate",
+      "path" : "HIVPatientInfo.deceasedDate",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.gender",
+      "path" : "HIVPatientInfo.gender",
+      "comment" : "(valueset depends on the program)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "https://dhis2.org/ValueSet/HIVPatientGenderVS"
+      }
+    },
+    {
+      "id" : "HIVPatientInfo.healthFacilityCode",
+      "path" : "HIVPatientInfo.healthFacilityCode",
+      "short" : "Health facility code.",
+      "definition" : "Health facility code.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "HIVPatientInfo.nhisId",
+      "path" : "HIVPatientInfo.nhisId",
+      "short" : "...",
+      "definition" : "...",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  }
+}

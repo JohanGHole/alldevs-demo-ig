@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="HIVView"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/StructureDefinition/HIVView"/>
+  <version value="1.0.0"/>
+  <name value="HIVView"/>
+  <title value="HIV Case Surveillance"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Logical model representation of the HIV case surveillance and treatment follow up program."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://dhis2.org/StructureDefinition/HIVView"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="HIVView">
+      <path value="HIVView"/>
+      <short value="HIV Case Surveillance"/>
+      <definition value="Logical model representation of the HIV case surveillance and treatment follow up program."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="HIVView.caseReport">
+      <path value="HIVView.caseReport"/>
+      <short value="HIV Initial Case Report"/>
+      <definition value="HIV Initial Case Report"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVView.caseReport"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/HIVCaseData"/>
+      </type>
+    </element>
+    <element id="HIVView.visit">
+      <path value="HIVView.visit"/>
+      <short value="HIV Visit"/>
+      <definition value="HIV Visit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HIVView.visit"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/HIVCaseVisitData"/>
+      </type>
+    </element>
+    <element id="HIVView.followUp">
+      <path value="HIVView.followUp"/>
+      <short value="HIV Follow-Up"/>
+      <definition value="HIV Follow-Up"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HIVView.followUp"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/HIVFollowUp"/>
+      </type>
+    </element>
+    <element id="HIVView.patient">
+      <path value="HIVView.patient"/>
+      <short value="HIV Patient Info"/>
+      <definition value="HIV Patient Info"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="HIVView.patient"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/HIVPatientInfo"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="HIVView">
+      <path value="HIVView"/>
+      <short value="HIV Case Surveillance"/>
+      <definition value="Logical model representation of the HIV case surveillance and treatment follow up program."/>
+    </element>
+    <element id="HIVView.caseReport">
+      <path value="HIVView.caseReport"/>
+      <short value="HIV Initial Case Report"/>
+      <definition value="HIV Initial Case Report"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/HIVCaseData"/>
+      </type>
+    </element>
+    <element id="HIVView.visit">
+      <path value="HIVView.visit"/>
+      <short value="HIV Visit"/>
+      <definition value="HIV Visit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/HIVCaseVisitData"/>
+      </type>
+    </element>
+    <element id="HIVView.followUp">
+      <path value="HIVView.followUp"/>
+      <short value="HIV Follow-Up"/>
+      <definition value="HIV Follow-Up"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/HIVFollowUp"/>
+      </type>
+    </element>
+    <element id="HIVView.patient">
+      <path value="HIVView.patient"/>
+      <short value="HIV Patient Info"/>
+      <definition value="HIV Patient Info"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/HIVPatientInfo"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

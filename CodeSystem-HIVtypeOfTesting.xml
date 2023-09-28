@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="HIVtypeOfTesting"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/CodeSystem/HIVtypeOfTesting"/>
+  <version value="1.0.0"/>
+  <name value="HIVtypeOfTesting"/>
+  <title value="HIV Type of Testing"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="HIV type of community-level testing."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="MOBILE"/>
+    <display value="Mobile testing (e.g. through vans or temporary testing facilities)"/>
+  </concept>
+  <concept>
+    <code value="VOLUNTARYCTC"/>
+    <display value="Voluntary counceling and testing centres (not within a health facility setting)"/>
+  </concept>
+  <concept>
+    <code value="OTHERCOMMUNITY"/>
+    <display value="Other community based testing"/>
+  </concept>
+</CodeSystem>

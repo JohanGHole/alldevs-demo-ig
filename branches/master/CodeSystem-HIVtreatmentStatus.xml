@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="HIVtreatmentStatus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/CodeSystem/HIVtreatmentStatus"/>
+  <version value="1.0.0"/>
+  <name value="HIVtreatmentStatus"/>
+  <title value="HIV Treatment Status"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="HIV treatment status."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="RETAINED"/>
+    <display value="On ART"/>
+  </concept>
+  <concept>
+    <code value="DEAD"/>
+    <display value="Death (documented)"/>
+  </concept>
+  <concept>
+    <code value="TREATMENTSTOPPED"/>
+    <display value="Refused (stopped) treatment"/>
+  </concept>
+  <concept>
+    <code value="TRANSFEROUT"/>
+    <display value="Transferred out"/>
+  </concept>
+  <concept>
+    <code value="LTFU"/>
+    <display value="Lost to follow up"/>
+  </concept>
+</CodeSystem>

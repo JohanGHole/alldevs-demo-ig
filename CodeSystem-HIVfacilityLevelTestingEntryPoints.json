@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "HIVfacilityLevelTestingEntryPoints",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints",
+  "version" : "1.0.0",
+  "name" : "HIVfacilityLevelTestingEntryPoints",
+  "title" : "HIV Entry Points for Facility-Level Testing",
+  "status" : "draft",
+  "date" : "2023-09-28T13:33:49+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "HIV entry points for facility-level testing.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "PROVIDERINITIATED",
+    "display" : "Provider-initiated tested in a clinic or emergency facility"
+  },
+  {
+    "code" : "ANTENATALCLINIC",
+    "display" : "Antenatal care clinic"
+  },
+  {
+    "code" : "VOLUNTARYCOUNSELLING",
+    "display" : "Voluntary Counselling and Testing (within a health facility setting)"
+  },
+  {
+    "code" : "FAMILYPLANNING",
+    "display" : "Family planning clinic"
+  },
+  {
+    "code" : "OTHERFACILITY",
+    "display" : "Other facility-level testing"
+  },
+  {
+    "code" : "TBCLINIC",
+    "display" : "TB clinic"
+  }]
+}

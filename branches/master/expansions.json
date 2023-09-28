@@ -1,0 +1,628 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "2c16bcfe-4e2b-4ccf-b8e8-965b4884d5f7",
+  "meta" : {
+    "lastUpdated" : "2023-09-28T13:33:49.389+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://dhis2.org/ValueSet/patient-sex-at-birth-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-patient-sex-at-birth.html\">codesystem Patient Sex at Birth v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-patient-sex-at-birth-male\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-sex-at-birth.html#patient-sex-at-birth-male\">male</a></td><td>https://dhis2.org/CodeSystem/patient-sex-at-birth</td><td>Male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-patient-sex-at-birth-female\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-sex-at-birth.html#patient-sex-at-birth-female\">female</a></td><td>https://dhis2.org/CodeSystem/patient-sex-at-birth</td><td>Female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-patient-sex-at-birth-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-sex-at-birth.html#patient-sex-at-birth-other\">other</a></td><td>https://dhis2.org/CodeSystem/patient-sex-at-birth</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-patient-sex-at-birth-unknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-sex-at-birth.html#patient-sex-at-birth-unknown\">unknown</a></td><td>https://dhis2.org/CodeSystem/patient-sex-at-birth</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/patient-sex-at-birth-vs",
+      "version" : "1.0.0",
+      "name" : "PatientSexAtBirthVS",
+      "title" : "Patient Sex at Birth Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fa626455-a3f8-4b9b-bad7-65adfe1d68e7",
+        "timestamp" : "2023-09-28T13:34:22+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/patient-sex-at-birth|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/patient-sex-at-birth",
+          "code" : "male",
+          "display" : "Male"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/patient-sex-at-birth",
+          "code" : "female",
+          "display" : "Female"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/patient-sex-at-birth",
+          "code" : "other",
+          "display" : "Other"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/patient-sex-at-birth",
+          "code" : "unknown",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://dhis2.org/ValueSet/HIVreasonsForVisitVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-HIVreasonsForVisit.html\">codesystem HIV Reasons for Visit v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVreasonsForVisit-CLINICAL-VISIT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVreasonsForVisit.html#HIVreasonsForVisit-CLINICAL_VISIT\">CLINICAL_VISIT</a></td><td>https://dhis2.org/CodeSystem/HIVreasonsForVisit</td><td>Clinical visit</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVreasonsForVisit-ARV-PICKUP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVreasonsForVisit.html#HIVreasonsForVisit-ARV_PICKUP\">ARV_PICKUP</a></td><td>https://dhis2.org/CodeSystem/HIVreasonsForVisit</td><td>Antiretroviral drug pick up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVreasonsForVisit-ISSUES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVreasonsForVisit.html#HIVreasonsForVisit-ISSUES\">ISSUES</a></td><td>https://dhis2.org/CodeSystem/HIVreasonsForVisit</td><td>Issues and concerns</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/HIVreasonsForVisitVS",
+      "version" : "1.0.0",
+      "name" : "HIVreasonsForVisitVS",
+      "title" : "HIV Reasons for Visit Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:b19fd48e-3051-4a5b-b732-3adf1dd081b3",
+        "timestamp" : "2023-09-28T13:34:23+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/HIVreasonsForVisit|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/HIVreasonsForVisit",
+          "code" : "CLINICAL_VISIT",
+          "display" : "Clinical visit"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVreasonsForVisit",
+          "code" : "ARV_PICKUP",
+          "display" : "Antiretroviral drug pick up"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVreasonsForVisit",
+          "code" : "ISSUES",
+          "display" : "Issues and concerns"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://dhis2.org/ValueSet/HIVFollowUpMethodsVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-HIVFollowUpMethods.html\">codesystem HIV Follow-up Methods v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpMethods-SMS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpMethods.html#HIVFollowUpMethods-SMS\">SMS</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpMethods</td><td>Text message</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpMethods-PHONECALL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpMethods.html#HIVFollowUpMethods-PHONECALL\">PHONECALL</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpMethods</td><td>Phone</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpMethods-HOMEVISIT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpMethods.html#HIVFollowUpMethods-HOMEVISIT\">HOMEVISIT</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpMethods</td><td>Home Visit</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpMethods-OTHER\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpMethods.html#HIVFollowUpMethods-OTHER\">OTHER</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpMethods</td><td>Other</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/HIVFollowUpMethodsVS",
+      "version" : "1.0.0",
+      "name" : "HIVFollowUpMethodsVS",
+      "title" : "HIV Follow-up Methods Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d0eed781-3ee3-46b4-b0e1-378865f76647",
+        "timestamp" : "2023-09-28T13:34:23+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/HIVFollowUpMethods|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpMethods",
+          "code" : "SMS",
+          "display" : "Text message"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpMethods",
+          "code" : "PHONECALL",
+          "display" : "Phone"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpMethods",
+          "code" : "HOMEVISIT",
+          "display" : "Home Visit"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpMethods",
+          "code" : "OTHER",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://dhis2.org/ValueSet/HIVFollowUpOutcomesVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-HIVFollowUpOutcomes.html\">codesystem HIV Follow-up Outcomes v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpOutcomes-RESCHEDULED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpOutcomes.html#HIVFollowUpOutcomes-RESCHEDULED\">RESCHEDULED</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpOutcomes</td><td>Returning to clinic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpOutcomes-TRANSFERRED-OUT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpOutcomes.html#HIVFollowUpOutcomes-TRANSFERRED_OUT\">TRANSFERRED_OUT</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpOutcomes</td><td>Self-transferred out</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpOutcomes-HOSPITALIZED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpOutcomes.html#HIVFollowUpOutcomes-HOSPITALIZED\">HOSPITALIZED</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpOutcomes</td><td>Hospitalized</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpOutcomes-REFUSED-TO-RETURN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpOutcomes.html#HIVFollowUpOutcomes-REFUSED_TO_RETURN\">REFUSED_TO_RETURN</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpOutcomes</td><td>Refused to return</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpOutcomes-NORESPONSE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpOutcomes.html#HIVFollowUpOutcomes-NORESPONSE\">NORESPONSE</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpOutcomes</td><td>Not located</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpOutcomes-DIED-REPORTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpOutcomes.html#HIVFollowUpOutcomes-DIED_REPORTED\">DIED_REPORTED</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpOutcomes</td><td>Died (reported)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVFollowUpOutcomes-DIED-CONFIRMED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVFollowUpOutcomes.html#HIVFollowUpOutcomes-DIED_CONFIRMED\">DIED_CONFIRMED</a></td><td>https://dhis2.org/CodeSystem/HIVFollowUpOutcomes</td><td>Confirmed Dead</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/HIVFollowUpOutcomesVS",
+      "version" : "1.0.0",
+      "name" : "HIVFollowUpOutcomesVS",
+      "title" : "HIV Follow-up Outcome Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:6c683c4e-95ef-4881-8424-4216f8134c1c",
+        "timestamp" : "2023-09-28T13:34:26+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+          "code" : "RESCHEDULED",
+          "display" : "Returning to clinic"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+          "code" : "TRANSFERRED_OUT",
+          "display" : "Self-transferred out"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+          "code" : "HOSPITALIZED",
+          "display" : "Hospitalized"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+          "code" : "REFUSED_TO_RETURN",
+          "display" : "Refused to return"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+          "code" : "NORESPONSE",
+          "display" : "Not located"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+          "code" : "DIED_REPORTED",
+          "display" : "Died (reported)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+          "code" : "DIED_CONFIRMED",
+          "display" : "Confirmed Dead"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://dhis2.org/ValueSet/HIVtptRegimenVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-HIVtptRegimen.html\">codesystem HIV TPT Regimen v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtptRegimen-1HP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtptRegimen.html#HIVtptRegimen-1HP\">1HP</a></td><td>https://dhis2.org/CodeSystem/HIVtptRegimen</td><td>1HP (one month of daily rifapentine plus isoniazid)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtptRegimen-3HP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtptRegimen.html#HIVtptRegimen-3HP\">3HP</a></td><td>https://dhis2.org/CodeSystem/HIVtptRegimen</td><td>3HP (three months of weekly rifapentine plus isoniazid)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtptRegimen-3RH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtptRegimen.html#HIVtptRegimen-3RH\">3RH</a></td><td>https://dhis2.org/CodeSystem/HIVtptRegimen</td><td>3RH (three months of daily rifampicin plus isoniazid)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtptRegimen-4R\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtptRegimen.html#HIVtptRegimen-4R\">4R</a></td><td>https://dhis2.org/CodeSystem/HIVtptRegimen</td><td>4R (four months of daily rifampicin monotherapy)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtptRegimen-6H\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtptRegimen.html#HIVtptRegimen-6H\">6H</a></td><td>https://dhis2.org/CodeSystem/HIVtptRegimen</td><td>6H (six months of daily isoniazid monotherapy)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtptRegimen-9H\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtptRegimen.html#HIVtptRegimen-9H\">9H</a></td><td>https://dhis2.org/CodeSystem/HIVtptRegimen</td><td>9H (nine months of daily isoniazid monotherapy)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtptRegimen-INH-B6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtptRegimen.html#HIVtptRegimen-INH-B6\">INH-B6</a></td><td>https://dhis2.org/CodeSystem/HIVtptRegimen</td><td>Combination INH-B6-Cotrim (for the duration of INH specified)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtptRegimen-OTHERTPT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtptRegimen.html#HIVtptRegimen-OTHERTPT\">OTHERTPT</a></td><td>https://dhis2.org/CodeSystem/HIVtptRegimen</td><td>Other</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/HIVtptRegimenVS",
+      "version" : "1.0.0",
+      "name" : "HIVtptRegimenVS",
+      "title" : "HIV TPT Regimen Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f355dd3b-189d-4cc5-bcc8-3052b65eb529",
+        "timestamp" : "2023-09-28T13:34:26+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/HIVtptRegimen|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+          "code" : "1HP",
+          "display" : "1HP (one month of daily rifapentine plus isoniazid)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+          "code" : "3HP",
+          "display" : "3HP (three months of weekly rifapentine plus isoniazid)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+          "code" : "3RH",
+          "display" : "3RH (three months of daily rifampicin plus isoniazid)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+          "code" : "4R",
+          "display" : "4R (four months of daily rifampicin monotherapy)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+          "code" : "6H",
+          "display" : "6H (six months of daily isoniazid monotherapy)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+          "code" : "9H",
+          "display" : "9H (nine months of daily isoniazid monotherapy)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+          "code" : "INH-B6",
+          "display" : "Combination INH-B6-Cotrim (for the duration of INH specified)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+          "code" : "OTHERTPT",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-HIVfacilityLevelTestingEntryPoints.html\">codesystem HIV Entry Points for Facility-Level Testing v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVfacilityLevelTestingEntryPoints-PROVIDERINITIATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVfacilityLevelTestingEntryPoints.html#HIVfacilityLevelTestingEntryPoints-PROVIDERINITIATED\">PROVIDERINITIATED</a></td><td>https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints</td><td>Provider-initiated tested in a clinic or emergency facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVfacilityLevelTestingEntryPoints-ANTENATALCLINIC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVfacilityLevelTestingEntryPoints.html#HIVfacilityLevelTestingEntryPoints-ANTENATALCLINIC\">ANTENATALCLINIC</a></td><td>https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints</td><td>Antenatal care clinic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVfacilityLevelTestingEntryPoints-VOLUNTARYCOUNSELLING\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVfacilityLevelTestingEntryPoints.html#HIVfacilityLevelTestingEntryPoints-VOLUNTARYCOUNSELLING\">VOLUNTARYCOUNSELLING</a></td><td>https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints</td><td>Voluntary Counselling and Testing (within a health facility setting)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVfacilityLevelTestingEntryPoints-FAMILYPLANNING\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVfacilityLevelTestingEntryPoints.html#HIVfacilityLevelTestingEntryPoints-FAMILYPLANNING\">FAMILYPLANNING</a></td><td>https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints</td><td>Family planning clinic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVfacilityLevelTestingEntryPoints-OTHERFACILITY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVfacilityLevelTestingEntryPoints.html#HIVfacilityLevelTestingEntryPoints-OTHERFACILITY\">OTHERFACILITY</a></td><td>https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints</td><td>Other facility-level testing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVfacilityLevelTestingEntryPoints-TBCLINIC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVfacilityLevelTestingEntryPoints.html#HIVfacilityLevelTestingEntryPoints-TBCLINIC\">TBCLINIC</a></td><td>https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints</td><td>TB clinic</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS",
+      "version" : "1.0.0",
+      "name" : "HIVfacilityLevelTestingEntryPointsVS",
+      "title" : "HIV Entry Points for Facility-Level Testing Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5c50e7cf-877b-4c87-acc4-25e6d16a5cbb",
+        "timestamp" : "2023-09-28T13:34:26+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints",
+          "code" : "PROVIDERINITIATED",
+          "display" : "Provider-initiated tested in a clinic or emergency facility"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints",
+          "code" : "ANTENATALCLINIC",
+          "display" : "Antenatal care clinic"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints",
+          "code" : "VOLUNTARYCOUNSELLING",
+          "display" : "Voluntary Counselling and Testing (within a health facility setting)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints",
+          "code" : "FAMILYPLANNING",
+          "display" : "Family planning clinic"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints",
+          "code" : "OTHERFACILITY",
+          "display" : "Other facility-level testing"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints",
+          "code" : "TBCLINIC",
+          "display" : "TB clinic"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://dhis2.org/ValueSet/HIVtypeOfTestingVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-HIVtypeOfTesting.html\">codesystem HIV Type of Testing v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtypeOfTesting-MOBILE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtypeOfTesting.html#HIVtypeOfTesting-MOBILE\">MOBILE</a></td><td>https://dhis2.org/CodeSystem/HIVtypeOfTesting</td><td>Mobile testing (e.g. through vans or temporary testing facilities)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtypeOfTesting-VOLUNTARYCTC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtypeOfTesting.html#HIVtypeOfTesting-VOLUNTARYCTC\">VOLUNTARYCTC</a></td><td>https://dhis2.org/CodeSystem/HIVtypeOfTesting</td><td>Voluntary counceling and testing centres (not within a health facility setting)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtypeOfTesting-OTHERCOMMUNITY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtypeOfTesting.html#HIVtypeOfTesting-OTHERCOMMUNITY\">OTHERCOMMUNITY</a></td><td>https://dhis2.org/CodeSystem/HIVtypeOfTesting</td><td>Other community based testing</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/HIVtypeOfTestingVS",
+      "version" : "1.0.0",
+      "name" : "HIVtypeOfTestingVS",
+      "title" : "HIV Type of Testing Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2c0b1a74-4e74-4686-96d8-61958ea29979",
+        "timestamp" : "2023-09-28T13:34:27+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/HIVtypeOfTesting|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/HIVtypeOfTesting",
+          "code" : "MOBILE",
+          "display" : "Mobile testing (e.g. through vans or temporary testing facilities)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtypeOfTesting",
+          "code" : "VOLUNTARYCTC",
+          "display" : "Voluntary counceling and testing centres (not within a health facility setting)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtypeOfTesting",
+          "code" : "OTHERCOMMUNITY",
+          "display" : "Other community based testing"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://dhis2.org/ValueSet/HIVtreatmentStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-HIVtreatmentStatus.html\">codesystem HIV Treatment Status v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtreatmentStatus-RETAINED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtreatmentStatus.html#HIVtreatmentStatus-RETAINED\">RETAINED</a></td><td>https://dhis2.org/CodeSystem/HIVtreatmentStatus</td><td>On ART</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtreatmentStatus-DEAD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtreatmentStatus.html#HIVtreatmentStatus-DEAD\">DEAD</a></td><td>https://dhis2.org/CodeSystem/HIVtreatmentStatus</td><td>Death (documented)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtreatmentStatus-TREATMENTSTOPPED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtreatmentStatus.html#HIVtreatmentStatus-TREATMENTSTOPPED\">TREATMENTSTOPPED</a></td><td>https://dhis2.org/CodeSystem/HIVtreatmentStatus</td><td>Refused (stopped) treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtreatmentStatus-TRANSFEROUT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtreatmentStatus.html#HIVtreatmentStatus-TRANSFEROUT\">TRANSFEROUT</a></td><td>https://dhis2.org/CodeSystem/HIVtreatmentStatus</td><td>Transferred out</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVtreatmentStatus-LTFU\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVtreatmentStatus.html#HIVtreatmentStatus-LTFU\">LTFU</a></td><td>https://dhis2.org/CodeSystem/HIVtreatmentStatus</td><td>Lost to follow up</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/HIVtreatmentStatusVS",
+      "version" : "1.0.0",
+      "name" : "HIVtreatmentStatusVS",
+      "title" : "HIV Treatment Status Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:beb28d80-de91-42bf-95ee-9a23899c9c6c",
+        "timestamp" : "2023-09-28T13:34:27+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/HIVtreatmentStatus|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/HIVtreatmentStatus",
+          "code" : "RETAINED",
+          "display" : "On ART"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtreatmentStatus",
+          "code" : "DEAD",
+          "display" : "Death (documented)"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtreatmentStatus",
+          "code" : "TREATMENTSTOPPED",
+          "display" : "Refused (stopped) treatment"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtreatmentStatus",
+          "code" : "TRANSFEROUT",
+          "display" : "Transferred out"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVtreatmentStatus",
+          "code" : "LTFU",
+          "display" : "Lost to follow up"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://dhis2.org/ValueSet/HIVReasonsForFollowUpVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-HIVReasonsForFollowUp.html\">codesystem HIV Follow-up Reasons v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVReasonsForFollowUp-MISSED-CLINICAL-VISIT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVReasonsForFollowUp.html#HIVReasonsForFollowUp-MISSED_CLINICAL_VISIT\">MISSED_CLINICAL_VISIT</a></td><td>https://dhis2.org/CodeSystem/HIVReasonsForFollowUp</td><td>Missed clinical care visit</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVReasonsForFollowUp-MISSED-ARV-PICKUP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVReasonsForFollowUp.html#HIVReasonsForFollowUp-MISSED_ARV_PICKUP\">MISSED_ARV_PICKUP</a></td><td>https://dhis2.org/CodeSystem/HIVReasonsForFollowUp</td><td>Missed medication pickup</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVReasonsForFollowUp-MISSED-VISIT-NONCLINICAL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVReasonsForFollowUp.html#HIVReasonsForFollowUp-MISSED_VISIT_NONCLINICAL\">MISSED_VISIT_NONCLINICAL</a></td><td>https://dhis2.org/CodeSystem/HIVReasonsForFollowUp</td><td>Missed non-clinical visit</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVReasonsForFollowUp-ART-NOT-STARTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVReasonsForFollowUp.html#HIVReasonsForFollowUp-ART_NOT_STARTED\">ART_NOT_STARTED</a></td><td>https://dhis2.org/CodeSystem/HIVReasonsForFollowUp</td><td>Did not initiate ART</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVReasonsForFollowUp-HIV-INCONCLUSIVE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVReasonsForFollowUp.html#HIVReasonsForFollowUp-HIV_INCONCLUSIVE\">HIV_INCONCLUSIVE</a></td><td>https://dhis2.org/CodeSystem/HIVReasonsForFollowUp</td><td>Inconclusive HIV status</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVReasonsForFollowUp-TEST-RESULTS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVReasonsForFollowUp.html#HIVReasonsForFollowUp-TEST_RESULTS\">TEST_RESULTS</a></td><td>https://dhis2.org/CodeSystem/HIVReasonsForFollowUp</td><td>Test results received</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-HIVReasonsForFollowUp-OTHER-REASON\"> </a>\u00a0\u00a0<a href=\"CodeSystem-HIVReasonsForFollowUp.html#HIVReasonsForFollowUp-OTHER_REASON\">OTHER_REASON</a></td><td>https://dhis2.org/CodeSystem/HIVReasonsForFollowUp</td><td>Other follow up reason (specify)</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/HIVReasonsForFollowUpVS",
+      "version" : "1.0.0",
+      "name" : "HIVReasonsForFollowUpVS",
+      "title" : "HIV Follow-up Reasons Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:70500999-e27b-4b64-8e01-8bb0535fb9b4",
+        "timestamp" : "2023-09-28T13:34:27+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+          "code" : "MISSED_CLINICAL_VISIT",
+          "display" : "Missed clinical care visit"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+          "code" : "MISSED_ARV_PICKUP",
+          "display" : "Missed medication pickup"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+          "code" : "MISSED_VISIT_NONCLINICAL",
+          "display" : "Missed non-clinical visit"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+          "code" : "ART_NOT_STARTED",
+          "display" : "Did not initiate ART"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+          "code" : "HIV_INCONCLUSIVE",
+          "display" : "Inconclusive HIV status"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+          "code" : "TEST_RESULTS",
+          "display" : "Test results received"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+          "code" : "OTHER_REASON",
+          "display" : "Other follow up reason (specify)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://dhis2.org/ValueSet/HIVPatientGenderVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-patient-gender.html\">codesystem Patient Gender v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-patient-gender-male\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-gender.html#patient-gender-male\">male</a></td><td>https://dhis2.org/CodeSystem/patient-gender</td><td>Male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-patient-gender-female\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-gender.html#patient-gender-female\">female</a></td><td>https://dhis2.org/CodeSystem/patient-gender</td><td>Female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-patient-gender-transgender\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-gender.html#patient-gender-transgender\">transgender</a></td><td>https://dhis2.org/CodeSystem/patient-gender</td><td>Transgender</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-patient-gender-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-gender.html#patient-gender-other\">other</a></td><td>https://dhis2.org/CodeSystem/patient-gender</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---dhis2.org-CodeSystem-patient-gender-unknown\"> </a>\u00a0\u00a0<a href=\"CodeSystem-patient-gender.html#patient-gender-unknown\">unknown</a></td><td>https://dhis2.org/CodeSystem/patient-gender</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://dhis2.org/ValueSet/HIVPatientGenderVS",
+      "version" : "1.0.0",
+      "name" : "HIVPatientGenderVS",
+      "title" : "Patient Gender Value Set",
+      "status" : "draft",
+      "date" : "2023-09-28T13:33:49+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fe5f4940-0f90-4184-a25f-15d80f1176e1",
+        "timestamp" : "2023-09-28T13:34:29+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://dhis2.org/CodeSystem/patient-gender|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://dhis2.org/CodeSystem/patient-gender",
+          "code" : "male",
+          "display" : "Male"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/patient-gender",
+          "code" : "female",
+          "display" : "Female"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/patient-gender",
+          "code" : "transgender",
+          "display" : "Transgender"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/patient-gender",
+          "code" : "other",
+          "display" : "Other"
+        },
+        {
+          "system" : "https://dhis2.org/CodeSystem/patient-gender",
+          "code" : "unknown",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  }]
+}

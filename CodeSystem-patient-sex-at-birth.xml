@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="patient-sex-at-birth"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/CodeSystem/patient-sex-at-birth"/>
+  <version value="1.0.0"/>
+  <name value="PatientSexAtBirth"/>
+  <title value="Patient Sex at Birth"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Patient sex at birth."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="male"/>
+    <display value="Male"/>
+    <designation>
+      <language value="pt"/>
+      <value value="Masculino"/>
+    </designation>
+    <designation>
+      <language value="es"/>
+      <value value="Masculino"/>
+    </designation>
+    <designation>
+      <language value="et"/>
+      <value value="Mees"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="female"/>
+    <display value="Female"/>
+    <designation>
+      <language value="pt"/>
+      <value value="Feminino"/>
+    </designation>
+    <designation>
+      <language value="es"/>
+      <value value="Feminino"/>
+    </designation>
+    <designation>
+      <language value="et"/>
+      <value value="Naine"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <designation>
+      <language value="pt"/>
+      <value value="Outro"/>
+    </designation>
+    <designation>
+      <language value="es"/>
+      <value value="Otro"/>
+    </designation>
+    <designation>
+      <language value="et"/>
+      <value value="Muu"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+    <designation>
+      <language value="pt"/>
+      <value value="Desconhecido"/>
+    </designation>
+    <designation>
+      <language value="es"/>
+      <value value="Desconocido"/>
+    </designation>
+    <designation>
+      <language value="et"/>
+      <value value="Teadmata"/>
+    </designation>
+  </concept>
+</CodeSystem>

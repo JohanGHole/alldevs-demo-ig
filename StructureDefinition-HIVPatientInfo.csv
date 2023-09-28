@@ -1,0 +1,41 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"HIVPatientInfo","HIVPatientInfo","","","",0,*,"","","","null {[]} {[]}
+","HIV Patient Data Model","Extension of the base patient data model. Includes properties specific to the HIV program.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"HIVPatientInfo.registrationDateTime","HIVPatientInfo.registrationDateTime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date-Time information was entered","Date and Time when the patient information was entered into DHIS2","","","","","","","","","",,,,,"",,,,"PatientInfo.registrationDateTime",1,1,"",""
+"HIVPatientInfo.firstregisteredAt","HIVPatientInfo.firstregisteredAt","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","The Org unit where the patient was first registered","The Org unit where the patient was first registered","","","","","","","","","",,,,,"",,,,"PatientInfo.firstregisteredAt",1,1,"",""
+"HIVPatientInfo.firstName","HIVPatientInfo.firstName","","","",0,1,"","","","string {[]} {[]}
+","Given name of the patient","Given name of the patient","","","","","","","","","",,,,,"",,,,"PatientInfo.firstName",0,1,"",""
+"HIVPatientInfo.lastName","HIVPatientInfo.lastName","","","",0,1,"","","","string {[]} {[]}
+","Family name","Family name","","","","","","","","","",,,,,"",,,,"PatientInfo.lastName",0,1,"",""
+"HIVPatientInfo.dateOfBirth","HIVPatientInfo.dateOfBirth","","","",1,1,"","","","string {[]} {[]}
+","...","...","","","","","","","","","",,,,,"",,,,"PatientInfo.dateOfBirth",1,1,"",""
+"HIVPatientInfo.dateOfBirthIsEstimated","HIVPatientInfo.dateOfBirthIsEstimated","","","",0,1,"","","","boolean {[]} {[]}
+","...","...","","","","","","","","","",,,,,"",,,,"PatientInfo.dateOfBirthIsEstimated",0,1,"",""
+"HIVPatientInfo.sexAtBirth","HIVPatientInfo.sexAtBirth","","","",1,1,"","","","code {[]} {[]}
+","...","...","(valueset depends on the program)","","","","","","","","",,"example","","https://dhis2.org/ValueSet/patient-sex-at-birth-vs","",,,,"PatientInfo.sexAtBirth",1,1,"",""
+"HIVPatientInfo.currentHomeAddress","HIVPatientInfo.currentHomeAddress","","","",1,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PatientInfo.currentHomeAddress",1,1,"",""
+"HIVPatientInfo.contactPhoneNumber","HIVPatientInfo.contactPhoneNumber","","","",1,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"PatientInfo.contactPhoneNumber",1,1,"",""
+"HIVPatientInfo.countryOfBirth","HIVPatientInfo.countryOfBirth","","","",0,1,"","","","string {[]} {[]}
+","...","...","","","","","","","","","",,"example","","urn:iso:std:iso:3166","",,,,"PatientInfo.countryOfBirth",0,1,"",""
+"HIVPatientInfo.nationaId","HIVPatientInfo.nationaId","","","",0,1,"","","","string {[]} {[]}
+","...","...","","","","","","","","","",,,,,"",,,,"PatientInfo.nationaId",0,1,"",""
+"HIVPatientInfo.consent","HIVPatientInfo.consent","","","",0,1,"","","","boolean {[]} {[]}
+","...","...","","","","","","","","","",,,,,"",,,,"PatientInfo.consent",0,1,"",""
+"HIVPatientInfo.hivEnrollmentUnit","HIVPatientInfo.hivEnrollmentUnit","","","",0,1,"","","","string {[]} {[]}
+","The organization unit that first registered the person.","The organization unit that first registered the person.","","","","","","","","","",,,,,"",,,,"HIVPatientInfo.hivEnrollmentUnit",0,1,"",""
+"HIVPatientInfo.programNationaId","HIVPatientInfo.programNationaId","","","",0,*,"","","","Identifier {[]} {[]}
+","...","...","","","","","","","","","",,,,,"",,,,"HIVPatientInfo.programNationaId",0,*,"",""
+"HIVPatientInfo.deceased","HIVPatientInfo.deceased","","","",0,1,"","","","boolean {[]} {[]}
+","...","...","","","","","","","","","",,,,,"",,,,"HIVPatientInfo.deceased",0,1,"",""
+"HIVPatientInfo.deceasedDate","HIVPatientInfo.deceasedDate","","","",0,1,"","","","boolean {[]} {[]}
+","...","...","","","","","","","","","",,,,,"",,,,"HIVPatientInfo.deceasedDate",0,1,"",""
+"HIVPatientInfo.gender","HIVPatientInfo.gender","","","",1,1,"","","","Coding {[]} {[]}
+","","","(valueset depends on the program)","","","","","","","","",,"example","","https://dhis2.org/ValueSet/HIVPatientGenderVS","",,,,"HIVPatientInfo.gender",1,1,"",""
+"HIVPatientInfo.healthFacilityCode","HIVPatientInfo.healthFacilityCode","","","",0,1,"","","","string {[]} {[]}
+","Health facility code.","Health facility code.","","","","","","","","","",,,,,"",,,,"HIVPatientInfo.healthFacilityCode",0,1,"",""
+"HIVPatientInfo.nhisId","HIVPatientInfo.nhisId","","","",0,1,"","","","string {[]} {[]}
+","...","...","","","","","","","","","",,,,,"",,,,"HIVPatientInfo.nhisId",0,1,"",""

@@ -1,0 +1,187 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhis2.org/StructureDefinition/HIVView> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVView"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://dhis2.org/StructureDefinition/HIVView"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "HIVView"] ; # 
+  fhir:title [ fhir:v "HIV Case Surveillance"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-09-28T13:33:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://dhis2.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "integration@dhis2.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Johan Hole" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "Johan@Devotta.no" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Logical model representation of the HIV case surveillance and treatment follow up program."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "https://dhis2.org/StructureDefinition/HIVView"^^xsd:anyURI] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "HIVView" ] ;
+       fhir:path [ fhir:v "HIVView" ] ;
+       fhir:short [ fhir:v "HIV Case Surveillance" ] ;
+       fhir:definition [ fhir:v "Logical model representation of the HIV case surveillance and treatment follow up program." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "HIVView.caseReport" ] ;
+       fhir:path [ fhir:v "HIVView.caseReport" ] ;
+       fhir:short [ fhir:v "HIV Initial Case Report" ] ;
+       fhir:definition [ fhir:v "HIV Initial Case Report" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVView.caseReport" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "https://dhis2.org/StructureDefinition/HIVCaseData"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVView.visit" ] ;
+       fhir:path [ fhir:v "HIVView.visit" ] ;
+       fhir:short [ fhir:v "HIV Visit" ] ;
+       fhir:definition [ fhir:v "HIV Visit" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVView.visit" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "https://dhis2.org/StructureDefinition/HIVCaseVisitData"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVView.followUp" ] ;
+       fhir:path [ fhir:v "HIVView.followUp" ] ;
+       fhir:short [ fhir:v "HIV Follow-Up" ] ;
+       fhir:definition [ fhir:v "HIV Follow-Up" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVView.followUp" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "https://dhis2.org/StructureDefinition/HIVFollowUp"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVView.patient" ] ;
+       fhir:path [ fhir:v "HIVView.patient" ] ;
+       fhir:short [ fhir:v "HIV Patient Info" ] ;
+       fhir:definition [ fhir:v "HIV Patient Info" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HIVView.patient" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "https://dhis2.org/StructureDefinition/HIVPatientInfo"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "HIVView" ] ;
+       fhir:path [ fhir:v "HIVView" ] ;
+       fhir:short [ fhir:v "HIV Case Surveillance" ] ;
+       fhir:definition [ fhir:v "Logical model representation of the HIV case surveillance and treatment follow up program." ]
+     ] [
+       fhir:id [ fhir:v "HIVView.caseReport" ] ;
+       fhir:path [ fhir:v "HIVView.caseReport" ] ;
+       fhir:short [ fhir:v "HIV Initial Case Report" ] ;
+       fhir:definition [ fhir:v "HIV Initial Case Report" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "https://dhis2.org/StructureDefinition/HIVCaseData"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVView.visit" ] ;
+       fhir:path [ fhir:v "HIVView.visit" ] ;
+       fhir:short [ fhir:v "HIV Visit" ] ;
+       fhir:definition [ fhir:v "HIV Visit" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "https://dhis2.org/StructureDefinition/HIVCaseVisitData"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVView.followUp" ] ;
+       fhir:path [ fhir:v "HIVView.followUp" ] ;
+       fhir:short [ fhir:v "HIV Follow-Up" ] ;
+       fhir:definition [ fhir:v "HIV Follow-Up" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "https://dhis2.org/StructureDefinition/HIVFollowUp"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HIVView.patient" ] ;
+       fhir:path [ fhir:v "HIVView.patient" ] ;
+       fhir:short [ fhir:v "HIV Patient Info" ] ;
+       fhir:definition [ fhir:v "HIV Patient Info" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "https://dhis2.org/StructureDefinition/HIVPatientInfo"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVfacilityLevelTestingEntryPoints"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "HIVfacilityLevelTestingEntryPoints"] ; # 
+  fhir:title [ fhir:v "HIV Entry Points for Facility-Level Testing"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-09-28T13:33:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://dhis2.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "integration@dhis2.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Johan Hole" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "Johan@Devotta.no" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "HIV entry points for facility-level testing."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "PROVIDERINITIATED" ] ;
+     fhir:display [ fhir:v "Provider-initiated tested in a clinic or emergency facility" ]
+  ] [
+     fhir:code [ fhir:v "ANTENATALCLINIC" ] ;
+     fhir:display [ fhir:v "Antenatal care clinic" ]
+  ] [
+     fhir:code [ fhir:v "VOLUNTARYCOUNSELLING" ] ;
+     fhir:display [ fhir:v "Voluntary Counselling and Testing (within a health facility setting)" ]
+  ] [
+     fhir:code [ fhir:v "FAMILYPLANNING" ] ;
+     fhir:display [ fhir:v "Family planning clinic" ]
+  ] [
+     fhir:code [ fhir:v "OTHERFACILITY" ] ;
+     fhir:display [ fhir:v "Other facility-level testing" ]
+  ] [
+     fhir:code [ fhir:v "TBCLINIC" ] ;
+     fhir:display [ fhir:v "TB clinic" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

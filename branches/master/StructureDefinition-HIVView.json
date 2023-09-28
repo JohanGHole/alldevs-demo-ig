@@ -1,0 +1,185 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "HIVView",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://dhis2.org/StructureDefinition/HIVView",
+  "version" : "1.0.0",
+  "name" : "HIVView",
+  "title" : "HIV Case Surveillance",
+  "status" : "draft",
+  "date" : "2023-09-28T13:33:49+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Logical model representation of the HIV case surveillance and treatment follow up program.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://dhis2.org/StructureDefinition/HIVView",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "HIVView",
+      "path" : "HIVView",
+      "short" : "HIV Case Surveillance",
+      "definition" : "Logical model representation of the HIV case surveillance and treatment follow up program.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "HIVView.caseReport",
+      "path" : "HIVView.caseReport",
+      "short" : "HIV Initial Case Report",
+      "definition" : "HIV Initial Case Report",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVView.caseReport",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/HIVCaseData"
+      }]
+    },
+    {
+      "id" : "HIVView.visit",
+      "path" : "HIVView.visit",
+      "short" : "HIV Visit",
+      "definition" : "HIV Visit",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "HIVView.visit",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/HIVCaseVisitData"
+      }]
+    },
+    {
+      "id" : "HIVView.followUp",
+      "path" : "HIVView.followUp",
+      "short" : "HIV Follow-Up",
+      "definition" : "HIV Follow-Up",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "HIVView.followUp",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/HIVFollowUp"
+      }]
+    },
+    {
+      "id" : "HIVView.patient",
+      "path" : "HIVView.patient",
+      "short" : "HIV Patient Info",
+      "definition" : "HIV Patient Info",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "HIVView.patient",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/HIVPatientInfo"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "HIVView",
+      "path" : "HIVView",
+      "short" : "HIV Case Surveillance",
+      "definition" : "Logical model representation of the HIV case surveillance and treatment follow up program."
+    },
+    {
+      "id" : "HIVView.caseReport",
+      "path" : "HIVView.caseReport",
+      "short" : "HIV Initial Case Report",
+      "definition" : "HIV Initial Case Report",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/HIVCaseData"
+      }]
+    },
+    {
+      "id" : "HIVView.visit",
+      "path" : "HIVView.visit",
+      "short" : "HIV Visit",
+      "definition" : "HIV Visit",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/HIVCaseVisitData"
+      }]
+    },
+    {
+      "id" : "HIVView.followUp",
+      "path" : "HIVView.followUp",
+      "short" : "HIV Follow-Up",
+      "definition" : "HIV Follow-Up",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/HIVFollowUp"
+      }]
+    },
+    {
+      "id" : "HIVView.patient",
+      "path" : "HIVView.patient",
+      "short" : "HIV Patient Info",
+      "definition" : "HIV Patient Info",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/HIVPatientInfo"
+      }]
+    }]
+  }
+}

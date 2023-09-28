@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhis2.org/Location/MDOrganisationUnitLocation-Sierra-Leone> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MDOrganisationUnitLocation-Sierra-Leone"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhis2.org/StructureDefinition/MDOrganisationUnitLocation"^^xsd:anyURI ;
+       fhir:link <https://dhis2.org/StructureDefinition/MDOrganisationUnitLocation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"MDOrganisationUnitLocation-Sierra-Leone\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;MDOrganisationUnitLocation-Sierra-Leone&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MDOrganisationUnitLocation.html\">MDOrganisationUnit Location</a></p></div><p><b>ShortName</b>: Sierra Leone</p><p><b>MDOrganisationUnit Hiearchy Level</b>: 1</p><p><b>identifier</b>: id: ImspTQPwCqd, code: OU_525</p><p><b>name</b>: Sierra Leone</p><p><b>managingOrganization</b>: <a href=\"MDOrganisationUnitOrganization/ImspTQPwCqd\">MDOrganisationUnitOrganization/ImspTQPwCqd</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://dhis2.org/StructureDefinition/ShortName"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Sierra Leone" ]
+  ] [
+     fhir:url [ fhir:v "https://dhis2.org/StructureDefinition/Level"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://dhis2.org/identifiertypes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "id" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://dhis2.org/identifiertypes#id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ImspTQPwCqd" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://dhis2.org/identifiertypes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "code" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://dhis2.org/identifiertypes#code"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "OU_525" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Sierra Leone"] ; # 
+  fhir:managingOrganization [
+     fhir:link <https://dhis2.org/MDOrganisationUnitOrganization/ImspTQPwCqd> ;
+     fhir:reference [ fhir:v "MDOrganisationUnitOrganization/ImspTQPwCqd" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

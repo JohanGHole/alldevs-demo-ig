@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="d2-md-organisation-unit"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://dhis2.org/StructureDefinition/d2-md-organisation-unit"/>
+  <version value="1.0.0"/>
+  <name value="MDOrganisationUnit"/>
+  <title value="DHIS2 Metadata: OrganisationUnit"/>
+  <status value="draft"/>
+  <date value="2023-09-28T13:33:49+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="DHIS2 Metadata: OrganisationUnit"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://dhis2.org/StructureDefinition/d2-md-organisation-unit"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="d2-md-organisation-unit">
+      <path value="d2-md-organisation-unit"/>
+      <short value="DHIS2 Metadata: OrganisationUnit"/>
+      <definition value="DHIS2 Metadata: OrganisationUnit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="d2-md-organisation-unit.id">
+      <path value="d2-md-organisation-unit.id"/>
+      <short value="Unique UID for organisation unit"/>
+      <definition value="Unique UID for organisation unit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.id"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.code">
+      <path value="d2-md-organisation-unit.code"/>
+      <short value="Unique CODE for organisation unit"/>
+      <definition value="Unique CODE for organisation unit"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.code"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.href">
+      <path value="d2-md-organisation-unit.href"/>
+      <short value="Unique URL where the organisation unit is available from"/>
+      <definition value="Unique URL where the organisation unit is available from"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.href"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.level">
+      <path value="d2-md-organisation-unit.level"/>
+      <short value="Level in hiearchy of organisation units"/>
+      <definition value="Level in hiearchy of organisation units"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.level"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.parent">
+      <path value="d2-md-organisation-unit.parent"/>
+      <short value="Parent of organisation unit"/>
+      <definition value="Parent of organisation unit"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.parent"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.leaf">
+      <path value="d2-md-organisation-unit.leaf"/>
+      <short value="Is this is a leaf node in the organisation unit tree"/>
+      <definition value="Is this is a leaf node in the organisation unit tree"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.leaf"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.name">
+      <path value="d2-md-organisation-unit.name"/>
+      <short value="Name of organisation"/>
+      <definition value="Name of organisation"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.name"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.shortName">
+      <path value="d2-md-organisation-unit.shortName"/>
+      <short value="Short name of organisation unit"/>
+      <definition value="Short name of organisation unit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.shortName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.description">
+      <path value="d2-md-organisation-unit.description"/>
+      <short value="Description of organisation unit"/>
+      <definition value="Description of organisation unit"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.openingDate">
+      <path value="d2-md-organisation-unit.openingDate"/>
+      <short value="Date this organisation unit was opened"/>
+      <definition value="Date this organisation unit was opened"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.openingDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.geometry">
+      <path value="d2-md-organisation-unit.geometry"/>
+      <short value="GeoJson geometry of organisation unit"/>
+      <definition value="GeoJson geometry of organisation unit"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="d2-md-organisation-unit.geometry"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.organisationUnitGroups">
+      <path value="d2-md-organisation-unit.organisationUnitGroups"/>
+      <short value="organisation unit groups that contains this organisation unit"/>
+      <definition value="organisation unit groups that contains this organisation unit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="d2-md-organisation-unit.organisationUnitGroups"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.dataSets">
+      <path value="d2-md-organisation-unit.dataSets"/>
+      <short value="data sets associated with this organisation unit"/>
+      <definition value="data sets associated with this organisation unit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="d2-md-organisation-unit.dataSets"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.programs">
+      <path value="d2-md-organisation-unit.programs"/>
+      <short value="programs associated with this organisation unit"/>
+      <definition value="programs associated with this organisation unit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="d2-md-organisation-unit.programs"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.attributeValues">
+      <path value="d2-md-organisation-unit.attributeValues"/>
+      <short value="additional attributes that are in this organisation unit"/>
+      <definition value="additional attributes that are in this organisation unit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="d2-md-organisation-unit.attributeValues"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/d2-md-attribute-value"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="d2-md-organisation-unit">
+      <path value="d2-md-organisation-unit"/>
+      <short value="DHIS2 Metadata: OrganisationUnit"/>
+      <definition value="DHIS2 Metadata: OrganisationUnit"/>
+    </element>
+    <element id="d2-md-organisation-unit.id">
+      <path value="d2-md-organisation-unit.id"/>
+      <short value="Unique UID for organisation unit"/>
+      <definition value="Unique UID for organisation unit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.code">
+      <path value="d2-md-organisation-unit.code"/>
+      <short value="Unique CODE for organisation unit"/>
+      <definition value="Unique CODE for organisation unit"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.href">
+      <path value="d2-md-organisation-unit.href"/>
+      <short value="Unique URL where the organisation unit is available from"/>
+      <definition value="Unique URL where the organisation unit is available from"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.level">
+      <path value="d2-md-organisation-unit.level"/>
+      <short value="Level in hiearchy of organisation units"/>
+      <definition value="Level in hiearchy of organisation units"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.parent">
+      <path value="d2-md-organisation-unit.parent"/>
+      <short value="Parent of organisation unit"/>
+      <definition value="Parent of organisation unit"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.leaf">
+      <path value="d2-md-organisation-unit.leaf"/>
+      <short value="Is this is a leaf node in the organisation unit tree"/>
+      <definition value="Is this is a leaf node in the organisation unit tree"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.name">
+      <path value="d2-md-organisation-unit.name"/>
+      <short value="Name of organisation"/>
+      <definition value="Name of organisation"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.shortName">
+      <path value="d2-md-organisation-unit.shortName"/>
+      <short value="Short name of organisation unit"/>
+      <definition value="Short name of organisation unit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.description">
+      <path value="d2-md-organisation-unit.description"/>
+      <short value="Description of organisation unit"/>
+      <definition value="Description of organisation unit"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.openingDate">
+      <path value="d2-md-organisation-unit.openingDate"/>
+      <short value="Date this organisation unit was opened"/>
+      <definition value="Date this organisation unit was opened"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.geometry">
+      <path value="d2-md-organisation-unit.geometry"/>
+      <short value="GeoJson geometry of organisation unit"/>
+      <definition value="GeoJson geometry of organisation unit"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.organisationUnitGroups">
+      <path value="d2-md-organisation-unit.organisationUnitGroups"/>
+      <short value="organisation unit groups that contains this organisation unit"/>
+      <definition value="organisation unit groups that contains this organisation unit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.dataSets">
+      <path value="d2-md-organisation-unit.dataSets"/>
+      <short value="data sets associated with this organisation unit"/>
+      <definition value="data sets associated with this organisation unit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.programs">
+      <path value="d2-md-organisation-unit.programs"/>
+      <short value="programs associated with this organisation unit"/>
+      <definition value="programs associated with this organisation unit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="d2-md-organisation-unit.attributeValues">
+      <path value="d2-md-organisation-unit.attributeValues"/>
+      <short value="additional attributes that are in this organisation unit"/>
+      <definition value="additional attributes that are in this organisation unit"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://dhis2.org/StructureDefinition/d2-md-attribute-value"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
