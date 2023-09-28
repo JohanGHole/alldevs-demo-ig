@@ -17,7 +17,7 @@
 <a name="introduction"> </a>
 	<h3>Introduction</h3>
 	<p>
-    This is a demo Implementation Guide (IG) focused on integrating FHIR with DHIS2 for the HIV Case Surveillance metadata package. In this preliminary version, we have developed logical models for the main components of the HIV Case Surveillance DHIS2 tracker program. 
+    This is a demo Implementation Guide (IG) focused on integrating FHIR with DHIS2 for the <a href="https://docs.dhis2.org/en/topics/metadata/hiv/hiv-case-surveillance/design.html#hiv-cs-design">HIV Case Surveillance Metadata Package</a>. In this preliminary version, we have developed logical models for the main components of the HIV Case Surveillance DHIS2 tracker program. 
     Additionally, we have included models for core DHIS2 static components such as organization units and option sets. The terminologies and structures are evaluated iteratively, to ensure proper representation of the underlying DHIS2 data model. While we plan to separate and refine these into distinct IGs, 
     the current content demonstrates the application of FHIR within DHIS2. While the foundational logical models are in place, we have yet to expand extensively on FHIR profiles. Please note that this IG is a work in progress, and your feedback is valued as we continue development.
   </p>
