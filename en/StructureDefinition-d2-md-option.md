@@ -1,0 +1,157 @@
+# DHIS2 Metadata: Option - DHIS2 Example FHIR Implementation Guide v1.0.0
+
+## Logical Model: DHIS2 Metadata: Option 
+
+ 
+DHIS2 Metadata: Option 
+
+**Usages:**
+
+* Use this Logical Model: [DHIS2 Metadata: OptionSet](StructureDefinition-d2-md-option-set.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/org.hisp.dhis.alldevs.demo|current/StructureDefinition/StructureDefinition-d2-md-option.json)
+
+### Formal Views of Profile Content
+
+ [Description Differentials, Snapshots, and other representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-d2-md-option.csv), [Excel](../StructureDefinition-d2-md-option.xlsx) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "d2-md-option",
+  "url" : "https://dhis2.org/StructureDefinition/d2-md-option",
+  "version" : "1.0.0",
+  "name" : "MDOption",
+  "title" : "DHIS2 Metadata: Option",
+  "status" : "draft",
+  "date" : "2026-06-03T19:24:40+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "DHIS2 Metadata: Option",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://dhis2.org/StructureDefinition/d2-md-option",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [{
+      "id" : "d2-md-option",
+      "path" : "d2-md-option",
+      "short" : "DHIS2 Metadata: Option",
+      "definition" : "DHIS2 Metadata: Option"
+    },
+    {
+      "id" : "d2-md-option.id",
+      "path" : "d2-md-option.id",
+      "short" : "Unique UID for option",
+      "definition" : "Unique UID for option",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-option.code",
+      "path" : "d2-md-option.code",
+      "short" : "Unique CODE for option",
+      "definition" : "Unique CODE for option",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-option.href",
+      "path" : "d2-md-option.href",
+      "short" : "Unique URL where the option is available from",
+      "definition" : "Unique URL where the option is available from",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "d2-md-option.name",
+      "path" : "d2-md-option.name",
+      "short" : "Name of option",
+      "definition" : "Name of option",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-option.shortName",
+      "path" : "d2-md-option.shortName",
+      "short" : "Short name of option",
+      "definition" : "Short name of option",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-option.description",
+      "path" : "d2-md-option.description",
+      "short" : "Description of option",
+      "definition" : "Description of option",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "d2-md-option.attributeValues",
+      "path" : "d2-md-option.attributeValues",
+      "short" : "additional attributes that are in this option",
+      "definition" : "additional attributes that are in this option",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://dhis2.org/StructureDefinition/d2-md-attribute-value"
+      }]
+    }]
+  }
+}
+
+```

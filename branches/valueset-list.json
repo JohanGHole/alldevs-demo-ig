@@ -1,0 +1,92 @@
+{
+  "codeSystems" : [{
+    "url" : "https://dhis2.org/ValueSet/HIVFollowUpMethodsVS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVFollowUpMethodsVS",
+    "title" : "HIV Follow-up Methods Value Set",
+    "description" : "A value set including all methods used for HIV follow-up.",
+    "systems" : ["https://dhis2.org/CodeSystem/HIVFollowUpMethods"]
+  },
+  {
+    "url" : "https://dhis2.org/ValueSet/HIVFollowUpOutcomesVS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVFollowUpOutcomesVS",
+    "title" : "HIV Follow-up Outcome Value Set",
+    "description" : "A value set including all possible outcomes of HIV follow-up.",
+    "systems" : ["https://dhis2.org/CodeSystem/HIVFollowUpOutcomes"]
+  },
+  {
+    "url" : "https://dhis2.org/ValueSet/HIVPatientGenderVS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVPatientGenderVS",
+    "title" : "Patient Gender Value Set",
+    "description" : "patient gender value set.",
+    "systems" : ["https://dhis2.org/CodeSystem/patient-gender"]
+  },
+  {
+    "url" : "https://dhis2.org/ValueSet/HIVReasonsForFollowUpVS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVReasonsForFollowUpVS",
+    "title" : "HIV Follow-up Reasons Value Set",
+    "description" : "A value set including all possible reasons for HIV follow-up.",
+    "systems" : ["https://dhis2.org/CodeSystem/HIVReasonsForFollowUp"]
+  },
+  {
+    "url" : "https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVfacilityLevelTestingEntryPointsVS",
+    "title" : "HIV Entry Points for Facility-Level Testing Value Set",
+    "description" : "HIV entry points for facility-level testing value set.",
+    "systems" : ["https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints"]
+  },
+  {
+    "url" : "https://dhis2.org/ValueSet/HIVreasonsForVisitVS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVreasonsForVisitVS",
+    "title" : "HIV Reasons for Visit Value Set",
+    "description" : "HIV reasons for visit value set.",
+    "systems" : ["https://dhis2.org/CodeSystem/HIVreasonsForVisit"]
+  },
+  {
+    "url" : "https://dhis2.org/ValueSet/HIVtptRegimenVS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVtptRegimenVS",
+    "title" : "HIV TPT Regimen Value Set",
+    "description" : "HIV tpt regimen value set.",
+    "systems" : ["https://dhis2.org/CodeSystem/HIVtptRegimen"]
+  },
+  {
+    "url" : "https://dhis2.org/ValueSet/HIVtreatmentStatusVS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVtreatmentStatusVS",
+    "title" : "HIV Treatment Status Value Set",
+    "description" : "HIV treatment status value set.",
+    "systems" : ["https://dhis2.org/CodeSystem/HIVtreatmentStatus"]
+  },
+  {
+    "url" : "https://dhis2.org/ValueSet/HIVtypeOfTestingVS",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVtypeOfTestingVS",
+    "title" : "HIV Type of Testing Value Set",
+    "description" : "HIV type of testing value set.",
+    "systems" : ["https://dhis2.org/CodeSystem/HIVtypeOfTesting"]
+  },
+  {
+    "url" : "https://dhis2.org/ValueSet/patient-sex-at-birth-vs",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "PatientSexAtBirthVS",
+    "title" : "Patient Sex at Birth Value Set",
+    "description" : "patient sex at birth value set.",
+    "systems" : ["https://dhis2.org/CodeSystem/patient-sex-at-birth"]
+  }]
+}

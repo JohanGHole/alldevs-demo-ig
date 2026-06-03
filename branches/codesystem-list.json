@@ -1,0 +1,82 @@
+{
+  "codeSystems" : [{
+    "url" : "https://dhis2.org/CodeSystem/HIVFollowUpMethods",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVFollowUpMethods",
+    "title" : "HIV Follow-up Methods",
+    "description" : "Methods used for HIV follow-up."
+  },
+  {
+    "url" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVFollowUpOutcomes",
+    "title" : "HIV Follow-up Outcomes",
+    "description" : "Outcomes for HIV follow-up."
+  },
+  {
+    "url" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVReasonsForFollowUp",
+    "title" : "HIV Follow-up Reasons",
+    "description" : "Reasons for HIV follow-up."
+  },
+  {
+    "url" : "https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVfacilityLevelTestingEntryPoints",
+    "title" : "HIV Entry Points for Facility-Level Testing",
+    "description" : "HIV entry points for facility-level testing."
+  },
+  {
+    "url" : "https://dhis2.org/CodeSystem/HIVreasonsForVisit",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVreasonsForVisit",
+    "title" : "HIV Reasons for Visit",
+    "description" : "HIV reasons for visit."
+  },
+  {
+    "url" : "https://dhis2.org/CodeSystem/HIVtptRegimen",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVtptRegimen",
+    "title" : "HIV TPT Regimen",
+    "description" : "HIV TPT regimen."
+  },
+  {
+    "url" : "https://dhis2.org/CodeSystem/HIVtreatmentStatus",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVtreatmentStatus",
+    "title" : "HIV Treatment Status",
+    "description" : "HIV treatment status."
+  },
+  {
+    "url" : "https://dhis2.org/CodeSystem/HIVtypeOfTesting",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVtypeOfTesting",
+    "title" : "HIV Type of Testing",
+    "description" : "HIV type of community-level testing."
+  },
+  {
+    "url" : "https://dhis2.org/CodeSystem/patient-gender",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "HIVPatientGender",
+    "title" : "Patient Gender",
+    "description" : "Patient gender codes."
+  },
+  {
+    "url" : "https://dhis2.org/CodeSystem/patient-sex-at-birth",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "PatientSexAtBirth",
+    "title" : "Patient Sex at Birth",
+    "description" : "Patient sex at birth."
+  }]
+}

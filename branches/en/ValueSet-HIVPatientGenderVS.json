@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "HIVPatientGenderVS",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet HIVPatientGenderVS</b></p><a name=\"HIVPatientGenderVS\"> </a><a name=\"hcHIVPatientGenderVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-patient-gender.html\"><code>https://dhis2.org/CodeSystem/patient-gender</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "https://dhis2.org/ValueSet/HIVPatientGenderVS",
+  "version" : "1.0.0",
+  "name" : "HIVPatientGenderVS",
+  "title" : "Patient Gender Value Set",
+  "status" : "draft",
+  "date" : "2026-06-03T19:24:40+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "patient gender value set.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://dhis2.org/CodeSystem/patient-gender"
+    }]
+  }
+}

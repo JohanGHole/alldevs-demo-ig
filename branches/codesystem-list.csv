@@ -1,0 +1,11 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://dhis2.org/CodeSystem/HIVFollowUpMethods,1.0.0,draft,,HIVFollowUpMethods,HIV Follow-up Methods,"Methods used for HIV follow-up.",
+https://dhis2.org/CodeSystem/HIVFollowUpOutcomes,1.0.0,draft,,HIVFollowUpOutcomes,HIV Follow-up Outcomes,"Outcomes for HIV follow-up.",
+https://dhis2.org/CodeSystem/HIVReasonsForFollowUp,1.0.0,draft,,HIVReasonsForFollowUp,HIV Follow-up Reasons,"Reasons for HIV follow-up.",
+https://dhis2.org/CodeSystem/HIVfacilityLevelTestingEntryPoints,1.0.0,draft,,HIVfacilityLevelTestingEntryPoints,HIV Entry Points for Facility-Level Testing,"HIV entry points for facility-level testing.",
+https://dhis2.org/CodeSystem/HIVreasonsForVisit,1.0.0,draft,,HIVreasonsForVisit,HIV Reasons for Visit,"HIV reasons for visit.",
+https://dhis2.org/CodeSystem/HIVtptRegimen,1.0.0,draft,,HIVtptRegimen,HIV TPT Regimen,"HIV TPT regimen.",
+https://dhis2.org/CodeSystem/HIVtreatmentStatus,1.0.0,draft,,HIVtreatmentStatus,HIV Treatment Status,"HIV treatment status.",
+https://dhis2.org/CodeSystem/HIVtypeOfTesting,1.0.0,draft,,HIVtypeOfTesting,HIV Type of Testing,"HIV type of community-level testing.",
+https://dhis2.org/CodeSystem/patient-gender,1.0.0,draft,,HIVPatientGender,Patient Gender,"Patient gender codes.",
+https://dhis2.org/CodeSystem/patient-sex-at-birth,1.0.0,draft,,PatientSexAtBirth,Patient Sex at Birth,"Patient sex at birth.",

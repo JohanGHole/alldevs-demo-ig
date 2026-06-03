@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "HIVFollowUpMethods",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HIVFollowUpMethods</b></p><a name=\"HIVFollowUpMethods\"> </a><a name=\"hcHIVFollowUpMethods\"> </a><p>This  code system <code>https://dhis2.org/CodeSystem/HIVFollowUpMethods</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SMS<a name=\"HIVFollowUpMethods-SMS\"> </a></td><td>Text message</td></tr><tr><td style=\"white-space:nowrap\">PHONECALL<a name=\"HIVFollowUpMethods-PHONECALL\"> </a></td><td>Phone</td></tr><tr><td style=\"white-space:nowrap\">HOMEVISIT<a name=\"HIVFollowUpMethods-HOMEVISIT\"> </a></td><td>Home Visit</td></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"HIVFollowUpMethods-OTHER\"> </a></td><td>Other</td></tr></table></div>"
+  },
+  "url" : "https://dhis2.org/CodeSystem/HIVFollowUpMethods",
+  "version" : "1.0.0",
+  "name" : "HIVFollowUpMethods",
+  "title" : "HIV Follow-up Methods",
+  "status" : "draft",
+  "date" : "2026-06-03T19:24:40+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Methods used for HIV follow-up.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "SMS",
+    "display" : "Text message"
+  },
+  {
+    "code" : "PHONECALL",
+    "display" : "Phone"
+  },
+  {
+    "code" : "HOMEVISIT",
+    "display" : "Home Visit"
+  },
+  {
+    "code" : "OTHER",
+    "display" : "Other"
+  }]
+}

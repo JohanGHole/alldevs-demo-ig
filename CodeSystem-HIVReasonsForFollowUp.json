@@ -1,0 +1,72 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "HIVReasonsForFollowUp",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HIVReasonsForFollowUp</b></p><a name=\"HIVReasonsForFollowUp\"> </a><a name=\"hcHIVReasonsForFollowUp\"> </a><p>This  code system <code>https://dhis2.org/CodeSystem/HIVReasonsForFollowUp</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">MISSED_CLINICAL_VISIT<a name=\"HIVReasonsForFollowUp-MISSED_CLINICAL_VISIT\"> </a></td><td>Missed clinical care visit</td></tr><tr><td style=\"white-space:nowrap\">MISSED_ARV_PICKUP<a name=\"HIVReasonsForFollowUp-MISSED_ARV_PICKUP\"> </a></td><td>Missed medication pickup</td></tr><tr><td style=\"white-space:nowrap\">MISSED_VISIT_NONCLINICAL<a name=\"HIVReasonsForFollowUp-MISSED_VISIT_NONCLINICAL\"> </a></td><td>Missed non-clinical visit</td></tr><tr><td style=\"white-space:nowrap\">ART_NOT_STARTED<a name=\"HIVReasonsForFollowUp-ART_NOT_STARTED\"> </a></td><td>Did not initiate ART</td></tr><tr><td style=\"white-space:nowrap\">HIV_INCONCLUSIVE<a name=\"HIVReasonsForFollowUp-HIV_INCONCLUSIVE\"> </a></td><td>Inconclusive HIV status</td></tr><tr><td style=\"white-space:nowrap\">TEST_RESULTS<a name=\"HIVReasonsForFollowUp-TEST_RESULTS\"> </a></td><td>Test results received</td></tr><tr><td style=\"white-space:nowrap\">OTHER_REASON<a name=\"HIVReasonsForFollowUp-OTHER_REASON\"> </a></td><td>Other follow up reason (specify)</td></tr></table></div>"
+  },
+  "url" : "https://dhis2.org/CodeSystem/HIVReasonsForFollowUp",
+  "version" : "1.0.0",
+  "name" : "HIVReasonsForFollowUp",
+  "title" : "HIV Follow-up Reasons",
+  "status" : "draft",
+  "date" : "2026-06-03T19:24:40+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Reasons for HIV follow-up.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "MISSED_CLINICAL_VISIT",
+    "display" : "Missed clinical care visit"
+  },
+  {
+    "code" : "MISSED_ARV_PICKUP",
+    "display" : "Missed medication pickup"
+  },
+  {
+    "code" : "MISSED_VISIT_NONCLINICAL",
+    "display" : "Missed non-clinical visit"
+  },
+  {
+    "code" : "ART_NOT_STARTED",
+    "display" : "Did not initiate ART"
+  },
+  {
+    "code" : "HIV_INCONCLUSIVE",
+    "display" : "Inconclusive HIV status"
+  },
+  {
+    "code" : "TEST_RESULTS",
+    "display" : "Test results received"
+  },
+  {
+    "code" : "OTHER_REASON",
+    "display" : "Other follow up reason (specify)"
+  }]
+}

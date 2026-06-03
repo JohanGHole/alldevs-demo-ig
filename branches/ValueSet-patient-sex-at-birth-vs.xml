@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="patient-sex-at-birth-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet patient-sex-at-birth-vs</b></p><a name="patient-sex-at-birth-vs"> </a><a name="hcpatient-sex-at-birth-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-patient-sex-at-birth.html"><code>https://dhis2.org/CodeSystem/patient-sex-at-birth</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul></div>
+  </text>
+  <url value="https://dhis2.org/ValueSet/patient-sex-at-birth-vs"/>
+  <version value="1.0.0"/>
+  <name value="PatientSexAtBirthVS"/>
+  <title value="Patient Sex at Birth Value Set"/>
+  <status value="draft"/>
+  <date value="2026-06-03T19:24:40+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="patient sex at birth value set."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://dhis2.org/CodeSystem/patient-sex-at-birth"/>
+    </include>
+  </compose>
+</ValueSet>

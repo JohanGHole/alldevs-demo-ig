@@ -1,0 +1,72 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "HIVFollowUpOutcomes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HIVFollowUpOutcomes</b></p><a name=\"HIVFollowUpOutcomes\"> </a><a name=\"hcHIVFollowUpOutcomes\"> </a><p>This  code system <code>https://dhis2.org/CodeSystem/HIVFollowUpOutcomes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">RESCHEDULED<a name=\"HIVFollowUpOutcomes-RESCHEDULED\"> </a></td><td>Returning to clinic</td></tr><tr><td style=\"white-space:nowrap\">TRANSFERRED_OUT<a name=\"HIVFollowUpOutcomes-TRANSFERRED_OUT\"> </a></td><td>Self-transferred out</td></tr><tr><td style=\"white-space:nowrap\">HOSPITALIZED<a name=\"HIVFollowUpOutcomes-HOSPITALIZED\"> </a></td><td>Hospitalized</td></tr><tr><td style=\"white-space:nowrap\">REFUSED_TO_RETURN<a name=\"HIVFollowUpOutcomes-REFUSED_TO_RETURN\"> </a></td><td>Refused to return</td></tr><tr><td style=\"white-space:nowrap\">NORESPONSE<a name=\"HIVFollowUpOutcomes-NORESPONSE\"> </a></td><td>Not located</td></tr><tr><td style=\"white-space:nowrap\">DIED_REPORTED<a name=\"HIVFollowUpOutcomes-DIED_REPORTED\"> </a></td><td>Died (reported)</td></tr><tr><td style=\"white-space:nowrap\">DIED_CONFIRMED<a name=\"HIVFollowUpOutcomes-DIED_CONFIRMED\"> </a></td><td>Confirmed Dead</td></tr></table></div>"
+  },
+  "url" : "https://dhis2.org/CodeSystem/HIVFollowUpOutcomes",
+  "version" : "1.0.0",
+  "name" : "HIVFollowUpOutcomes",
+  "title" : "HIV Follow-up Outcomes",
+  "status" : "draft",
+  "date" : "2026-06-03T19:24:40+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Outcomes for HIV follow-up.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "RESCHEDULED",
+    "display" : "Returning to clinic"
+  },
+  {
+    "code" : "TRANSFERRED_OUT",
+    "display" : "Self-transferred out"
+  },
+  {
+    "code" : "HOSPITALIZED",
+    "display" : "Hospitalized"
+  },
+  {
+    "code" : "REFUSED_TO_RETURN",
+    "display" : "Refused to return"
+  },
+  {
+    "code" : "NORESPONSE",
+    "display" : "Not located"
+  },
+  {
+    "code" : "DIED_REPORTED",
+    "display" : "Died (reported)"
+  },
+  {
+    "code" : "DIED_CONFIRMED",
+    "display" : "Confirmed Dead"
+  }]
+}

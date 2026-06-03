@@ -1,0 +1,11 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+https://dhis2.org/ValueSet/HIVFollowUpMethodsVS,1.0.0,draft,,HIVFollowUpMethodsVS,HIV Follow-up Methods Value Set,"A value set including all methods used for HIV follow-up.",,"Internal"
+https://dhis2.org/ValueSet/HIVFollowUpOutcomesVS,1.0.0,draft,,HIVFollowUpOutcomesVS,HIV Follow-up Outcome Value Set,"A value set including all possible outcomes of HIV follow-up.",,"Internal"
+https://dhis2.org/ValueSet/HIVPatientGenderVS,1.0.0,draft,,HIVPatientGenderVS,Patient Gender Value Set,"patient gender value set.",,"Internal"
+https://dhis2.org/ValueSet/HIVReasonsForFollowUpVS,1.0.0,draft,,HIVReasonsForFollowUpVS,HIV Follow-up Reasons Value Set,"A value set including all possible reasons for HIV follow-up.",,"Internal"
+https://dhis2.org/ValueSet/HIVfacilityLevelTestingEntryPointsVS,1.0.0,draft,,HIVfacilityLevelTestingEntryPointsVS,HIV Entry Points for Facility-Level Testing Value Set,"HIV entry points for facility-level testing value set.",,"Internal"
+https://dhis2.org/ValueSet/HIVreasonsForVisitVS,1.0.0,draft,,HIVreasonsForVisitVS,HIV Reasons for Visit Value Set,"HIV reasons for visit value set.",,"Internal"
+https://dhis2.org/ValueSet/HIVtptRegimenVS,1.0.0,draft,,HIVtptRegimenVS,HIV TPT Regimen Value Set,"HIV tpt regimen value set.",,"Internal"
+https://dhis2.org/ValueSet/HIVtreatmentStatusVS,1.0.0,draft,,HIVtreatmentStatusVS,HIV Treatment Status Value Set,"HIV treatment status value set.",,"Internal"
+https://dhis2.org/ValueSet/HIVtypeOfTestingVS,1.0.0,draft,,HIVtypeOfTestingVS,HIV Type of Testing Value Set,"HIV type of testing value set.",,"Internal"
+https://dhis2.org/ValueSet/patient-sex-at-birth-vs,1.0.0,draft,,PatientSexAtBirthVS,Patient Sex at Birth Value Set,"patient sex at birth value set.",,"Internal"

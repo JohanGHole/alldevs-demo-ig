@@ -1,0 +1,65 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "patient-gender",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem patient-gender</b></p><a name=\"patient-gender\"> </a><a name=\"hcpatient-gender\"> </a><p>This  code system <code>https://dhis2.org/CodeSystem/patient-gender</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"patient-gender-male\"> </a></td><td>Male</td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"patient-gender-female\"> </a></td><td>Female</td></tr><tr><td style=\"white-space:nowrap\">transgender<a name=\"patient-gender-transgender\"> </a></td><td>Transgender</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"patient-gender-other\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"patient-gender-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "https://dhis2.org/CodeSystem/patient-gender",
+  "version" : "1.0.0",
+  "name" : "HIVPatientGender",
+  "title" : "Patient Gender",
+  "status" : "draft",
+  "date" : "2026-06-03T19:24:40+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Patient gender codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "male",
+    "display" : "Male"
+  },
+  {
+    "code" : "female",
+    "display" : "Female"
+  },
+  {
+    "code" : "transgender",
+    "display" : "Transgender"
+  },
+  {
+    "code" : "other",
+    "display" : "Other"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown"
+  }]
+}

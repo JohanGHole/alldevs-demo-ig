@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhis2.org/CodeSystem/HIVtptRegimen> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVtptRegimen"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HIVtptRegimen</b></p><a name=\"HIVtptRegimen\"> </a><a name=\"hcHIVtptRegimen\"> </a><p>This  code system <code>https://dhis2.org/CodeSystem/HIVtptRegimen</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1HP<a name=\"HIVtptRegimen-1HP\"> </a></td><td>1HP (one month of daily rifapentine plus isoniazid)</td></tr><tr><td style=\"white-space:nowrap\">3HP<a name=\"HIVtptRegimen-3HP\"> </a></td><td>3HP (three months of weekly rifapentine plus isoniazid)</td></tr><tr><td style=\"white-space:nowrap\">3RH<a name=\"HIVtptRegimen-3RH\"> </a></td><td>3RH (three months of daily rifampicin plus isoniazid)</td></tr><tr><td style=\"white-space:nowrap\">4R<a name=\"HIVtptRegimen-4R\"> </a></td><td>4R (four months of daily rifampicin monotherapy)</td></tr><tr><td style=\"white-space:nowrap\">6H<a name=\"HIVtptRegimen-6H\"> </a></td><td>6H (six months of daily isoniazid monotherapy)</td></tr><tr><td style=\"white-space:nowrap\">9H<a name=\"HIVtptRegimen-9H\"> </a></td><td>9H (nine months of daily isoniazid monotherapy)</td></tr><tr><td style=\"white-space:nowrap\">INH-B6<a name=\"HIVtptRegimen-INH-B6\"> </a></td><td>Combination INH-B6-Cotrim (for the duration of INH specified)</td></tr><tr><td style=\"white-space:nowrap\">OTHERTPT<a name=\"HIVtptRegimen-OTHERTPT\"> </a></td><td>Other</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://dhis2.org/CodeSystem/HIVtptRegimen"^^xsd:anyURI ;
+     fhir:l <https://dhis2.org/CodeSystem/HIVtptRegimen>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "HIVtptRegimen"] ; # 
+  fhir:title [ fhir:v "HIV TPT Regimen"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-06-03T19:24:40+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://dhis2.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "integration@dhis2.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Johan Hole" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "Johan@Devotta.no" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "HIV TPT regimen."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:l <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1HP" ] ;
+     fhir:display [ fhir:v "1HP (one month of daily rifapentine plus isoniazid)" ]
+  ] [
+     fhir:code [ fhir:v "3HP" ] ;
+     fhir:display [ fhir:v "3HP (three months of weekly rifapentine plus isoniazid)" ]
+  ] [
+     fhir:code [ fhir:v "3RH" ] ;
+     fhir:display [ fhir:v "3RH (three months of daily rifampicin plus isoniazid)" ]
+  ] [
+     fhir:code [ fhir:v "4R" ] ;
+     fhir:display [ fhir:v "4R (four months of daily rifampicin monotherapy)" ]
+  ] [
+     fhir:code [ fhir:v "6H" ] ;
+     fhir:display [ fhir:v "6H (six months of daily isoniazid monotherapy)" ]
+  ] [
+     fhir:code [ fhir:v "9H" ] ;
+     fhir:display [ fhir:v "9H (nine months of daily isoniazid monotherapy)" ]
+  ] [
+     fhir:code [ fhir:v "INH-B6" ] ;
+     fhir:display [ fhir:v "Combination INH-B6-Cotrim (for the duration of INH specified)" ]
+  ] [
+     fhir:code [ fhir:v "OTHERTPT" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

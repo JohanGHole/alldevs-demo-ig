@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="HIVFollowUpOutcomes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem HIVFollowUpOutcomes</b></p><a name="HIVFollowUpOutcomes"> </a><a name="hcHIVFollowUpOutcomes"> </a><p>This  code system <code>https://dhis2.org/CodeSystem/HIVFollowUpOutcomes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">RESCHEDULED<a name="HIVFollowUpOutcomes-RESCHEDULED"> </a></td><td>Returning to clinic</td></tr><tr><td style="white-space:nowrap">TRANSFERRED_OUT<a name="HIVFollowUpOutcomes-TRANSFERRED_OUT"> </a></td><td>Self-transferred out</td></tr><tr><td style="white-space:nowrap">HOSPITALIZED<a name="HIVFollowUpOutcomes-HOSPITALIZED"> </a></td><td>Hospitalized</td></tr><tr><td style="white-space:nowrap">REFUSED_TO_RETURN<a name="HIVFollowUpOutcomes-REFUSED_TO_RETURN"> </a></td><td>Refused to return</td></tr><tr><td style="white-space:nowrap">NORESPONSE<a name="HIVFollowUpOutcomes-NORESPONSE"> </a></td><td>Not located</td></tr><tr><td style="white-space:nowrap">DIED_REPORTED<a name="HIVFollowUpOutcomes-DIED_REPORTED"> </a></td><td>Died (reported)</td></tr><tr><td style="white-space:nowrap">DIED_CONFIRMED<a name="HIVFollowUpOutcomes-DIED_CONFIRMED"> </a></td><td>Confirmed Dead</td></tr></table></div>
+  </text>
+  <url value="https://dhis2.org/CodeSystem/HIVFollowUpOutcomes"/>
+  <version value="1.0.0"/>
+  <name value="HIVFollowUpOutcomes"/>
+  <title value="HIV Follow-up Outcomes"/>
+  <status value="draft"/>
+  <date value="2026-06-03T19:24:40+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://dhis2.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="integration@dhis2.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Johan Hole"/>
+    <telecom>
+      <system value="email"/>
+      <value value="Johan@Devotta.no"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Outcomes for HIV follow-up."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="RESCHEDULED"/>
+    <display value="Returning to clinic"/>
+  </concept>
+  <concept>
+    <code value="TRANSFERRED_OUT"/>
+    <display value="Self-transferred out"/>
+  </concept>
+  <concept>
+    <code value="HOSPITALIZED"/>
+    <display value="Hospitalized"/>
+  </concept>
+  <concept>
+    <code value="REFUSED_TO_RETURN"/>
+    <display value="Refused to return"/>
+  </concept>
+  <concept>
+    <code value="NORESPONSE"/>
+    <display value="Not located"/>
+  </concept>
+  <concept>
+    <code value="DIED_REPORTED"/>
+    <display value="Died (reported)"/>
+  </concept>
+  <concept>
+    <code value="DIED_CONFIRMED"/>
+    <display value="Confirmed Dead"/>
+  </concept>
+</CodeSystem>

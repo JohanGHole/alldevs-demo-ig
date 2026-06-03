@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhis2.org/CodeSystem/HIVtypeOfTesting> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVtypeOfTesting"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HIVtypeOfTesting</b></p><a name=\"HIVtypeOfTesting\"> </a><a name=\"hcHIVtypeOfTesting\"> </a><p>This  code system <code>https://dhis2.org/CodeSystem/HIVtypeOfTesting</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">MOBILE<a name=\"HIVtypeOfTesting-MOBILE\"> </a></td><td>Mobile testing (e.g. through vans or temporary testing facilities)</td></tr><tr><td style=\"white-space:nowrap\">VOLUNTARYCTC<a name=\"HIVtypeOfTesting-VOLUNTARYCTC\"> </a></td><td>Voluntary counceling and testing centres (not within a health facility setting)</td></tr><tr><td style=\"white-space:nowrap\">OTHERCOMMUNITY<a name=\"HIVtypeOfTesting-OTHERCOMMUNITY\"> </a></td><td>Other community based testing</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://dhis2.org/CodeSystem/HIVtypeOfTesting"^^xsd:anyURI ;
+     fhir:l <https://dhis2.org/CodeSystem/HIVtypeOfTesting>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "HIVtypeOfTesting"] ; # 
+  fhir:title [ fhir:v "HIV Type of Testing"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-06-03T19:24:40+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://dhis2.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "integration@dhis2.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Johan Hole" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "Johan@Devotta.no" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "HIV type of community-level testing."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:l <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "MOBILE" ] ;
+     fhir:display [ fhir:v "Mobile testing (e.g. through vans or temporary testing facilities)" ]
+  ] [
+     fhir:code [ fhir:v "VOLUNTARYCTC" ] ;
+     fhir:display [ fhir:v "Voluntary counceling and testing centres (not within a health facility setting)" ]
+  ] [
+     fhir:code [ fhir:v "OTHERCOMMUNITY" ] ;
+     fhir:display [ fhir:v "Other community based testing" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

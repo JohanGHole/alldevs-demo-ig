@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "HIVtypeOfTesting",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem HIVtypeOfTesting</b></p><a name=\"HIVtypeOfTesting\"> </a><a name=\"hcHIVtypeOfTesting\"> </a><p>This  code system <code>https://dhis2.org/CodeSystem/HIVtypeOfTesting</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">MOBILE<a name=\"HIVtypeOfTesting-MOBILE\"> </a></td><td>Mobile testing (e.g. through vans or temporary testing facilities)</td></tr><tr><td style=\"white-space:nowrap\">VOLUNTARYCTC<a name=\"HIVtypeOfTesting-VOLUNTARYCTC\"> </a></td><td>Voluntary counceling and testing centres (not within a health facility setting)</td></tr><tr><td style=\"white-space:nowrap\">OTHERCOMMUNITY<a name=\"HIVtypeOfTesting-OTHERCOMMUNITY\"> </a></td><td>Other community based testing</td></tr></table></div>"
+  },
+  "url" : "https://dhis2.org/CodeSystem/HIVtypeOfTesting",
+  "version" : "1.0.0",
+  "name" : "HIVtypeOfTesting",
+  "title" : "HIV Type of Testing",
+  "status" : "draft",
+  "date" : "2026-06-03T19:24:40+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://dhis2.org"
+    },
+    {
+      "system" : "email",
+      "value" : "integration@dhis2.org"
+    }]
+  },
+  {
+    "name" : "Johan Hole",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "Johan@Devotta.no",
+      "use" : "work"
+    }]
+  }],
+  "description" : "HIV type of community-level testing.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "MOBILE",
+    "display" : "Mobile testing (e.g. through vans or temporary testing facilities)"
+  },
+  {
+    "code" : "VOLUNTARYCTC",
+    "display" : "Voluntary counceling and testing centres (not within a health facility setting)"
+  },
+  {
+    "code" : "OTHERCOMMUNITY",
+    "display" : "Other community based testing"
+  }]
+}
